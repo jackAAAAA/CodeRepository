@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "400950532047",
+    "project_id": "just-a-test-7ddc9",
+    "storage_bucket": "just-a-test-7ddc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400950532047:android:baf573d429ebbd837064ba",
+        "android_client_info": {
+          "package_name": "com.tencent.qcloud.tim.tuikit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400950532047-k14p2ng23ccnvf32e3ol4e07273qd7f0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnpFauEplVEMU023WWZclqxDYvQacNvVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400950532047-k14p2ng23ccnvf32e3ol4e07273qd7f0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
