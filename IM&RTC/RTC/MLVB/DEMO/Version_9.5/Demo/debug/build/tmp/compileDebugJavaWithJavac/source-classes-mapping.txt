@@ -1,0 +1,4 @@
+com/tencent/liteav/debug/GenerateTestUserSig.java
+ com.tencent.liteav.debug.GenerateTestUserSig
+com/tencent/liteav/debug/BuildConfig.java
+ com.tencent.liteav.debug.BuildConfig

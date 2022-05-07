@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ugcupload_color_green">#FF0ACCAC</color>
+    <color name="ugcupload_white">#FFFFFFFF</color>
+    <color name="ugcupload_black">#FF000000</color>
+    <color name="ugcupload_transparent">#00000000</color>
+    <color name="ugcupload_record_settings_tip">#FF999999</color>
+    <color name="ugcupload_color_accent">#FF0ACCAC</color>
+    <color name="ugcupload_color_background">#FF202530</color>
+</resources>

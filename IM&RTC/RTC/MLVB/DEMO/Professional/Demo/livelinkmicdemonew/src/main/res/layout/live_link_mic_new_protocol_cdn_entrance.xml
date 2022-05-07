@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/live_link_mic_new_content_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <TextView
+            android:id="@+id/tv_cdn_play_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/livelinkmicnew_play_hint"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_cdn_play_hint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/livelinkmicnew_play_hint_1"
+            android:textColor="#FF6B82A8"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_cdn_play_hint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/livelinkmicnew_play_hint_2"
+            android:textColor="#FF6B82A8"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tv_cdn_stream_text"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/livelinkmicnew_tv_generate_or_input_play_url"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/tv_cdn_btn_normal_url"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/live_link_mic_new_btn_bg"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/livelinkmicnew_tv_generate_default_play_url"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_cdn_stream_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/livelinkmicnew_tv_i_have_a_play_url"
+            android:textColor="#ff6b82a8"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_input_cdn_url"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="8"
+                android:background="@drawable/live_link_mic_new_input_url_bg"
+                android:hint="@string/livelinkmicnew_tv_please_scan_to_input_play_url"
+                android:imeOptions="actionGo"
+                android:inputType="textUri"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#ff6b82a8"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_cdn_btn_qr_code_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/live_link_mic_new_ic_qcode" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cdn_btn_play"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/live_link_mic_new_btn_bg"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/livelinkmicnew_tv_start_play"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/cdn_btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/live_link_mic_new_btn_bg"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/livelinkmicnew_btn_cancel"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</ScrollView>

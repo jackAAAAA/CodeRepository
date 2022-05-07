@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion = rootProject.ext.compileSdkVersion
+    buildToolsVersion = rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId = "com.tencent.qcloud.xiaoshipin"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        renderscriptTargetApi = 14
+        renderscriptSupportModeEnabled = true
+        multiDexEnabled = true
+
+        ndk {
+            abiFilters rootProject.ext.ndkAbi
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(System.getenv("KEY_PATH"))
+            storePassword System.getenv("KEY_PASS")
+            keyAlias System.getenv("ALIAS_NAME")
+            keyPassword System.getenv("ALIAS_PASS")
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled = false
+            proguardFiles.add(file('proguard-rules.pro'))
+            signingConfig signingConfigs.release
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        pickFirst '**/libc++_shared.so'
+        pickFirst '**/libRSSupport.so'
+        pickFirst '**/librsjni.so'
+        doNotStrip "*/armeabi/libYTCommon.so"
+        doNotStrip "*/armeabi-v7a/libYTCommon.so"
+        doNotStrip "*/x86/libYTCommon.so"
+        doNotStrip "*/arm64-v8a/libYTCommon.so"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(include: ['*.jar'], dir: 'src/main/jniLibs')
+    compile fileTree(include: ['*.jar'], dir: 'src/main/jniLibs/upload')
+    compile 'com.google.android.material:material:1.0.0'
+    compile 'androidx.recyclerview:recyclerview:1.0.0'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.ctiao:dfm:0.4.4'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.tencent.bugly:crashreport_upgrade:1.5.1'
+    compile 'com.tencent.bugly:nativecrashreport:3.8.0'
+    compile project(':ugckit')
+}
+

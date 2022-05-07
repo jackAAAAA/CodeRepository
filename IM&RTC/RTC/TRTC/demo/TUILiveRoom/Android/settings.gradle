@@ -1,0 +1,4 @@
+include ':Beauty'
+include ':App'
+include ':Source'
+include ':Debug'

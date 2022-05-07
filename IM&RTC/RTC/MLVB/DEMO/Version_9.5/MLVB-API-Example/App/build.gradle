@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.tencent.trtc"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 24
+        versionName "9.5.0.1475"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+    signingConfigs {
+//        最好用release/debug以区分正式版/测试版，而不用config，此处的关键字（release）要与buildTypes中所使用的关键字相同
+        release {
+//            ways1
+//            storeFile file("$System.env.KEY_PATH")
+//            storePassword "$System.env.KEY_PASS"
+//            keyAlias "$System.env.ALIAS_NAME"
+//            keyPassword "$System.env.ALIAS_PASS"
+//            ways2
+            storeFile file(System.getenv("KEY_PATH"))
+            storePassword System.getenv("KEY_PASS")
+            keyAlias System.getenv("ALIAS_NAME")
+            keyPassword System.getenv("ALIAS_PASS")
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation rootProject.ext.liteavSdk
+    implementation project(':Debug')
+    implementation project(':Basic:LivePushCamera')
+    implementation project(':Basic:LivePushScreen')
+    implementation project(':Basic:LivePlay')
+    implementation project(':Basic:LiveLink')
+    implementation project(':Basic:LivePK')
+    implementation project(':Advanced:SwitchRenderView')
+    implementation project(':Advanced:ThirdBeauty')
+    implementation project(':Advanced:RTCPushAndPlay')
+    implementation project(':Advanced:CustomVideoCapture')
+}
+

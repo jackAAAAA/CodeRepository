@@ -1,0 +1,31 @@
+include ':trtcdemo'
+include ':app'
+include ':login'
+include ':debug'
+include ':ugckit'
+include ':beautysettingkit'
+//project(':beauty').projectDir = new File(settingsDir, '../../../../project/android/demo/liteav/beauty')
+include ':audioeffectsettingkit'
+
+include ':ugcvideoeditdemo'
+include ':ugcvideorecorddemo'
+include ':ugcvideojoindemo'
+include ':ugcvideouploaddemo'
+
+include ':superplayerkit'
+include ':superplayerdemo'
+
+include ':liveplayerdemo'
+include ':lebplayerdemo'
+include ':livepusherdemo'
+include ':livelinkmicdemoold'
+include ':livelinkmicdemonew'
+include ':livepusherscreendemo'
+
+if (!liteavSourcePath.isEmpty()) {
+    apply from: new File(settingsDir, '../source_link_gradle/liteav_source_settings.gradle').getAbsolutePath()
+}
+
+if (!videoEngineSourcePath.isEmpty()) {
+    apply from: new File(settingsDir, '../source_link_gradle/videoengine_source_settings.gradle').getAbsolutePath()
+}

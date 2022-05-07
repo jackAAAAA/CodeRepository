@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.mlvbv2demo.activity.CustomActivity">
+
+
+    <com.project.mlvbv2demo.utils.CameraEglSurfaceView
+        android:id="@+id/gl_surface_view"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:src="@drawable/livepusher_content_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_push"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/livepusher_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/camera_switch"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/camera_switch"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/livepusher_camera_front"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/iv_push"
+        app:layout_constraintTop_toTopOf="@+id/iv_push" />
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/tv_live_play_view"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/camera_switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="180dp"
+        android:layout_height="320dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+# Referenced at D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:45
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:45
+-keep class com.tencent.qcloud.xiaoshipin.TCApplication { <init>(); }

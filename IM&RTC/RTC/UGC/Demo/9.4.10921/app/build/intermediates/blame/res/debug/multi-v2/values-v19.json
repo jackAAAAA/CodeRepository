@@ -1,0 +1,47 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Work_in_TYYZ\\Products\\UGC\\Android\\Demo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v19\\values-v19.xml",
+            "map": [
+                {
+                    "source": "D:\\Work_in_TYYZ\\Products\\UGC\\Android\\Demo\\ugckit\\build\\intermediates\\packaged_res\\debug\\values-v19\\values-v19.xml",
+                    "from": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "140",
+                        "endLines": "16",
+                        "endColumns": "12",
+                        "endOffsets": "1007"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1094",
+                        "endLines": "31",
+                        "endColumns": "12",
+                        "endOffsets": "1961"
+                    }
+                },
+                {
+                    "source": "D:\\Work_in_TYYZ\\Products\\UGC\\Android\\Demo\\app\\src\\main\\res\\values-v19\\styles.xml",
+                    "from": {
+                        "startLines": "4,17,21",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "108,921,1005",
+                        "endLines": "15,19,23",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "913,997,1163"
+                    },
+                    "to": {
+                        "startLines": "2,14,17",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,854,933",
+                        "endLines": "13,16,19",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "849,928,1089"
+                    }
+                }
+            ]
+        }
+    ]
+}

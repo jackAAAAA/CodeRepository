@@ -1,0 +1,39 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml:1:1-6:12
+	package
+		ADDED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml:1:11-45
+		INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+		INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+		ADDED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml:1:1-6:12
+		INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml:1:1-6:12
+	android:versionCode
+		INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+		ADDED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml:1:1-6:12
+		INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+application
+ADDED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml:4:5-32
+uses-sdk
+INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+		ADDED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+		INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+		ADDED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml
+		INJECTED from D:\Work\TYYZ\Products\TRTC\demo\TRTC-API-Example\Debug\src\main\AndroidManifest.xml

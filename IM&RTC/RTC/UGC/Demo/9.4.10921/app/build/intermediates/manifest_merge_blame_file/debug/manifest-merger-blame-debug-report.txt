@@ -1,0 +1,487 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.qcloud.xiaoshipin"
+4    android:versionCode="1"
+5    android:versionName="v1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="26" />
+9-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:6:5-67
+11-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:7:5-79
+12-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:8:5-76
+13-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:8:22-73
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+14-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:9:5-75
+14-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:9:22-72
+15    <uses-permission android:name="android.permission.CALL_PHONE" />
+15-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:10:5-69
+15-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:10:22-66
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:11:5-81
+16-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:11:22-78
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:12:5-80
+17-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:12:22-77
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:13:5-71
+18-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:13:22-68
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:14:5-65
+19-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:14:22-62
+20    <uses-permission android:name="android.permission.READ_CONTACTS" />
+20-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:15:5-72
+20-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:15:22-69
+21
+22    <uses-feature android:name="android.hardware.camera" />
+22-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:17:5-60
+22-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:17:19-57
+23    <uses-feature android:name="android.hardware.camera.autofocus" />
+23-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:18:5-70
+23-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:18:19-67
+24
+25    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+25-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:20:5-81
+25-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:20:22-78
+26    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+26-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:21:5-79
+26-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:21:22-76
+27    <!-- IMSDK 权限 -->
+28    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+28-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:23:5-79
+28-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:23:22-76
+29    <uses-permission android:name="android.permission.GET_TASKS" />
+29-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:24:5-68
+29-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:24:22-65
+30    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+30-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:25:5-80
+30-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:25:22-77
+31    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+31-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:26:5-81
+31-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:26:22-78
+32    <uses-permission android:name="android.permission.VIBRATE" />
+32-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:27:5-66
+32-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:27:22-63
+33    <uses-permission android:name="android.permission.WAKE_LOCK" />
+33-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:28:5-68
+33-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:28:22-65
+34    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+34-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:29:5-78
+34-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:29:22-75
+35    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+35-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:30:5-71
+35-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:30:22-68
+36    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+36-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:31:5-74
+36-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:31:22-71
+37    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+37-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:32:5-74
+37-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:32:22-71
+38    <uses-permission android:name="android.permission.BLUETOOTH" />
+38-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:33:5-68
+38-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:33:22-65
+39
+40    <!-- Bugly -->
+41    <uses-permission android:name="android.permission.READ_LOGS" />
+41-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:36:5-68
+41-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:36:22-65
+42    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+42-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:14:5-83
+42-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:14:22-80
+43    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+43-->[com.tencent.liteav:LiteAVSDK_Professional:9.5.11171] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\3eec01a1245bd84633bfbaeb6ba22dc4\LiteAVSDK_Professional-9.5.11171\AndroidManifest.xml:28:5-76
+43-->[com.tencent.liteav:LiteAVSDK_Professional:9.5.11171] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\3eec01a1245bd84633bfbaeb6ba22dc4\LiteAVSDK_Professional-9.5.11171\AndroidManifest.xml:28:22-73
+44
+45    <application
+45-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:37:5-208:19
+46        android:name="com.tencent.qcloud.xiaoshipin.TCApplication"
+46-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:38:9-67
+47        android:allowBackup="true"
+47-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:39:9-35
+48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+48-->[androidx.core:core:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\246153fc0686d4ff78c8961ca91329b7\core-1.0.0\AndroidManifest.xml:22:18-86
+49        android:debuggable="true"
+50        android:icon="@mipmap/ic_launcher"
+50-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:40:9-43
+51        android:label="@string/app_name"
+51-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:41:9-41
+52        android:largeHeap="true"
+52-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:42:9-33
+53        android:supportsRtl="true"
+53-->[com.tencent.liteav:LiteAVSDK_Professional:9.5.11171] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\3eec01a1245bd84633bfbaeb6ba22dc4\LiteAVSDK_Professional-9.5.11171\AndroidManifest.xml:32:9-35
+54        android:testOnly="true"
+55        android:theme="@style/AppTheme"
+55-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:43:9-40
+56        android:usesCleartextTraffic="true" >
+56-->[com.tencent.liteav:LiteAVSDK_Professional:9.5.11171] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\3eec01a1245bd84633bfbaeb6ba22dc4\LiteAVSDK_Professional-9.5.11171\AndroidManifest.xml:33:9-44
+57        <activity
+57-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:46:9-54:20
+58            android:name="com.tencent.qcloud.xiaoshipin.play.TCVideoPreviewActivity"
+58-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:47:13-56
+59            android:screenOrientation="portrait" >
+59-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:48:13-49
+60            <intent-filter>
+60-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:49:13-53:29
+61                <action android:name="com.tencent.liteav.demo.videopreview" />
+61-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:50:17-79
+61-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:50:25-76
+62                <action android:name="android.intent.action.MAIN" />
+62-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:51:17-69
+62-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:51:25-66
+63
+64                <category android:name="android.intent.category.DEFAULT" />
+64-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:52:17-76
+64-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:52:27-73
+65            </intent-filter>
+66        </activity>
+67        <activity
+67-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:56:9-65:20
+68            android:name="com.tencent.qcloud.xiaoshipin.mainui.TCSplashActivity"
+68-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:57:13-81
+69            android:launchMode="singleTop"
+69-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:58:13-43
+70            android:screenOrientation="portrait"
+70-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:59:13-49
+71            android:theme="@style/SplashTheme" >
+71-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:60:13-47
+72            <intent-filter>
+72-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:61:13-64:29
+73                <action android:name="android.intent.action.MAIN" />
+73-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:51:17-69
+73-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:51:25-66
+74
+75                <category android:name="android.intent.category.LAUNCHER" />
+75-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:63:17-77
+75-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:63:27-74
+76            </intent-filter>
+77        </activity>
+78
+79        <!-- 消息收发service -->
+80        <service
+80-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:68:9-71:45
+81            android:name="com.tencent.qalsdk.service.QalService"
+81-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:69:13-65
+82            android:exported="false"
+82-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:70:13-37
+83            android:process=":QALSERVICE" />
+83-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:71:13-42
+84        <!-- 消息收发辅助service -->
+85        <service
+85-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:73:9-76:45
+86            android:name="com.tencent.qalsdk.service.QalAssistService"
+86-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:74:13-71
+87            android:exported="false"
+87-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:75:13-37
+88            android:process=":QALSERVICE" />
+88-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:76:13-42
+89        <!-- 离线消息广播接收器 -->
+90        <receiver
+90-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:78:9-84:20
+91            android:name="com.tencent.qalsdk.QALBroadcastReceiver"
+91-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:79:13-67
+92            android:exported="false" >
+92-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:80:13-37
+93            <intent-filter>
+93-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:81:13-83:29
+94                <action android:name="com.tencent.qalsdk.broadcast.qal" />
+94-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:82:17-75
+94-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:82:25-72
+95            </intent-filter>
+96        </receiver>
+97        <!-- 系统消息广播接收器 -->
+98        <receiver
+98-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:86:9-101:20
+99            android:name="com.tencent.qalsdk.core.NetConnInfoCenter"
+99-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:87:13-69
+100            android:process=":QALSERVICE" >
+100-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:88:13-42
+101            <intent-filter>
+101-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:89:13-91:29
+102                <action android:name="android.intent.action.BOOT_COMPLETED" />
+102-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:90:17-79
+102-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:90:25-76
+103            </intent-filter>
+104            <intent-filter>
+104-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:92:13-94:29
+105                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+105-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:93:17-79
+105-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:93:25-76
+106            </intent-filter>
+107            <intent-filter>
+107-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:95:13-97:29
+108                <action android:name="android.intent.action.TIME_SET" />
+108-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:96:17-73
+108-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:96:25-70
+109            </intent-filter>
+110            <intent-filter>
+110-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:98:13-100:29
+111                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+111-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:99:17-81
+111-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:99:25-78
+112            </intent-filter>
+113        </receiver>
+114
+115        <activity
+115-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:103:9-106:49
+116            android:name="com.tencent.qcloud.xiaoshipin.login.TCLoginActivity"
+116-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:104:13-79
+117            android:screenOrientation="portrait"
+117-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:105:13-49
+118            android:theme="@style/LoginTheme" />
+118-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:106:13-46
+119        <activity
+119-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:107:9-110:52
+120            android:name="com.tencent.qcloud.xiaoshipin.login.TCRegisterActivity"
+120-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:108:13-82
+121            android:screenOrientation="portrait"
+121-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:109:13-49
+122            android:theme="@style/RegisterTheme" />
+122-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:110:13-49
+123        <activity
+123-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:111:9-114:52
+124            android:name="com.tencent.qcloud.xiaoshipin.mainui.TCMainActivity"
+124-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:112:13-79
+125            android:launchMode="singleTask"
+125-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:113:13-44
+126            android:screenOrientation="portrait" />
+126-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:114:13-49
+127        <activity
+127-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:116:9-119:59
+128            android:name="com.tencent.qcloud.xiaoshipin.play.TCVodPlayerActivity"
+128-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:117:13-82
+129            android:screenOrientation="portrait"
+129-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:118:13-49
+130            android:windowSoftInputMode="adjustNothing" />
+130-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:119:13-56
+131        <activity
+131-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:120:9-125:59
+132            android:name="com.tencent.qcloud.xiaoshipin.videorecord.TCVideoRecordActivity"
+132-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:121:13-91
+133            android:launchMode="singleTop"
+133-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:122:13-43
+134            android:screenOrientation="portrait"
+134-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:123:13-49
+135            android:theme="@style/RecordActivityTheme"
+135-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:124:13-55
+136            android:windowSoftInputMode="adjustNothing" />
+136-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:125:13-56
+137        <activity
+137-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:126:9-131:59
+138            android:name="com.tencent.qcloud.xiaoshipin.videorecord.TCVideoFollowRecordActivity"
+138-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:127:13-97
+139            android:launchMode="singleTop"
+139-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:128:13-43
+140            android:screenOrientation="portrait"
+140-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:129:13-49
+141            android:theme="@style/MixRecordActivityTheme"
+141-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:130:13-58
+142            android:windowSoftInputMode="adjustNothing" />
+142-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:131:13-56
+143        <activity
+143-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:132:9-137:59
+144            android:name="com.tencent.qcloud.xiaoshipin.videorecord.TCVideoTripleScreenActivity"
+144-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:133:13-97
+145            android:launchMode="singleTop"
+145-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:134:13-43
+146            android:screenOrientation="portrait"
+146-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:135:13-49
+147            android:theme="@style/MixRecordActivityTheme"
+147-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:136:13-58
+148            android:windowSoftInputMode="adjustNothing" />
+148-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:137:13-56
+149        <activity
+149-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:138:9-141:59
+150            android:name="com.tencent.qcloud.xiaoshipin.videopublish.TCVideoPublisherActivity"
+150-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:139:13-95
+151            android:screenOrientation="portrait"
+151-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:140:13-49
+152            android:windowSoftInputMode="adjustNothing" />
+152-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:141:13-56
+153        <activity
+153-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:142:9-144:64
+154            android:name="com.tencent.rtmp.video.TXScreenCapture$TXScreenCaptureAssistantActivity"
+154-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:143:13-99
+155            android:theme="@android:style/Theme.Translucent" />
+155-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:144:13-61
+156        <activity
+156-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:145:9-149:75
+157            android:name="com.umeng.qq.tencent.AssistActivity"
+157-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:146:13-63
+158            android:configChanges="orientation|keyboardHidden|screenSize"
+158-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:147:13-74
+159            android:screenOrientation="portrait"
+159-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:148:13-49
+160            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+160-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:149:13-72
+161        <activity
+161-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:150:9-153:58
+162            android:name="com.tencent.qcloud.xiaoshipin.videochoose.TCPicturePickerActivity"
+162-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:151:13-93
+163            android:screenOrientation="portrait"
+163-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:152:13-49
+164            android:theme="@style/PickerActivityTheme" />
+164-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:153:13-55
+165        <activity
+165-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:154:9-157:58
+166            android:name="com.tencent.qcloud.xiaoshipin.videochoose.TCTripleRecordVideoPickerActivity"
+166-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:155:13-103
+167            android:screenOrientation="portrait"
+167-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:156:13-49
+168            android:theme="@style/PickerActivityTheme" />
+168-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:157:13-55
+169        <activity
+169-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:158:9-161:58
+170            android:name="com.tencent.qcloud.xiaoshipin.videochoose.TCVideoPickerActivity"
+170-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:159:13-91
+171            android:screenOrientation="portrait"
+171-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:160:13-49
+172            android:theme="@style/PickerActivityTheme" />
+172-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:161:13-55
+173        <activity
+173-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:162:9-166:52
+174            android:name="com.tencent.qcloud.xiaoshipin.videojoiner.TCPictureJoinActivity"
+174-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:163:13-91
+175            android:launchMode="singleTop"
+175-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:164:13-43
+176            android:screenOrientation="portrait"
+176-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:166:13-49
+177            android:theme="@style/PictureTransitionActivityStyle" />
+177-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:165:13-66
+178        <activity
+178-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:167:9-170:58
+179            android:name="com.tencent.qcloud.xiaoshipin.videoeditor.TCVideoCutActivity"
+179-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:168:13-88
+180            android:screenOrientation="portrait"
+180-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:169:13-49
+181            android:theme="@style/EditerActivityTheme" />
+181-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:170:13-55
+182        <activity
+182-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:171:9-175:58
+183            android:name="com.tencent.qcloud.xiaoshipin.videoeditor.TCVideoEditerActivity"
+183-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:172:13-91
+184            android:launchMode="singleTask"
+184-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:173:13-44
+185            android:screenOrientation="portrait"
+185-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:174:13-49
+186            android:theme="@style/EditerActivityTheme" />
+186-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:175:13-55
+187        <activity
+187-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:176:9-179:58
+188            android:name="com.tencent.qcloud.xiaoshipin.videoeditor.TCVideoEffectActivity"
+188-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:177:13-62
+189            android:screenOrientation="portrait"
+189-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:178:13-49
+190            android:theme="@style/EditerActivityTheme" />
+190-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:179:13-55
+191        <activity
+191-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:180:9-183:75
+192            android:name="com.tencent.qcloud.xiaoshipin.videojoiner.TCVideoJoinerActivity"
+192-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:181:13-91
+193            android:screenOrientation="portrait"
+193-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:182:13-49
+194            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+194-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:183:13-72
+195        <activity android:name="com.tencent.qcloud.xiaoshipin.userinfo.TCAboutActivity" />
+195-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:184:9-91
+195-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:184:19-88
+196
+197        <provider
+197-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:186:9-194:20
+198            android:name="androidx.core.content.FileProvider"
+198-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:187:13-62
+199            android:authorities="com.tencent.qcloud.xiaoshipin.fileprovider"
+199-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:188:13-77
+200            android:exported="false"
+200-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:189:13-37
+201            android:grantUriPermissions="true" >
+201-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:190:13-47
+202            <meta-data
+202-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:191:13-193:53
+203                android:name="android.support.FILE_PROVIDER_PATHS"
+203-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:192:17-67
+204                android:resource="@xml/filepaths" />
+204-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:193:17-50
+205        </provider>
+206
+207        <uses-library
+207-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:196:9-198:40
+208            android:name="com.google.android.maps"
+208-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:197:13-51
+209            android:required="false" />
+209-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:198:13-37
+210        <uses-library android:name="android.test.runner" />
+210-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:199:9-60
+210-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:199:23-57
+211
+212        <activity
+212-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:201:9-203:52
+213            android:name="com.tencent.qcloud.xiaoshipin.mainui.TCSettingActivity"
+213-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:202:13-82
+214            android:screenOrientation="portrait" />
+214-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:203:13-49
+215        <activity
+215-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:205:9-207:52
+216            android:name="com.tencent.qcloud.xiaoshipin.mainui.TCLanguagaSettingActivity"
+216-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:206:13-90
+217            android:screenOrientation="portrait" />
+217-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:207:13-49
+218        <activity
+218-->[:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:9-45:52
+219            android:name="com.tencent.qcloud.ugckit.module.effect.bgm.TCMusicActivity"
+219-->[:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:13-87
+220            android:screenOrientation="portrait" />
+220-->[:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:13-49
+221        <activity android:name="com.tencent.bugly.beta.ui.BetaActiveAlertActivity" /> <!-- Beta Activity -->
+221-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:17:9-86
+221-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:17:19-83
+222        <activity
+222-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:19:9-23:56
+223            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+223-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:20:13-66
+224            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+224-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:21:13-81
+225            android:theme="@android:style/Theme.Translucent" /> <!-- Custom FileProvider for 7.x -->
+225-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:22:13-61
+226        <provider
+226-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:24:9-34:20
+227            android:name="com.tencent.bugly.beta.utils.BuglyFileProvider"
+227-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:25:13-74
+228            android:authorities="com.tencent.qcloud.xiaoshipin.fileProvider"
+228-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:26:13-64
+229            android:exported="false"
+229-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:27:13-37
+230            android:grantUriPermissions="true" >
+230-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:28:13-47
+231            <meta-data
+231-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:191:13-193:53
+232                android:name="android.support.FILE_PROVIDER_PATHS"
+232-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:192:17-67
+233                android:resource="@xml/provider_paths" />
+233-->D:\Work_in_TYYZ\Products\UGC\Android\Demo\app\src\main\AndroidManifest.xml:193:17-50
+234        </provider> <!-- 配置tinker合成结果service -->
+235        <service
+235-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:36:9-39:72
+236            android:name="com.tencent.bugly.beta.tinker.TinkerResultService"
+236-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:37:13-77
+237            android:exported="false"
+237-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:38:13-37
+238            android:permission="android.permission.BIND_JOB_SERVICE" />
+238-->[com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a1145cbeaa565aae088a83b4ccd73af2\jetified-crashreport_upgrade-1.5.1\AndroidManifest.xml:39:13-69
+239
+240        <activity
+240-->[com.tencent.liteav:LiteAVSDK_Professional:9.5.11171] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\3eec01a1245bd84633bfbaeb6ba22dc4\LiteAVSDK_Professional-9.5.11171\AndroidManifest.xml:34:9-36:86
+241            android:name="com.tencent.liteav.video.TXScreenCapture$TXScreenCaptureAssistantActivity"
+241-->[com.tencent.liteav:LiteAVSDK_Professional:9.5.11171] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\3eec01a1245bd84633bfbaeb6ba22dc4\LiteAVSDK_Professional-9.5.11171\AndroidManifest.xml:35:13-101
+242            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+242-->[com.tencent.liteav:LiteAVSDK_Professional:9.5.11171] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\3eec01a1245bd84633bfbaeb6ba22dc4\LiteAVSDK_Professional-9.5.11171\AndroidManifest.xml:36:13-83
+243    </application>
+244
+245</manifest>

@@ -1,0 +1,556 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:2:1-156:12
+INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:2:1-156:12
+INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:2:1-156:12
+INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:2:1-156:12
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-31:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\ad9b04747fee410f8b2a24dce3cc4abe\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [:beautysettingkit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\beautysettingkit\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\ceb81553a8d4d1147c847656f2ca2121\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.castorflex.verticalviewpager:library:19.0.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a7b23698d840b9cfee5dabeadc619fa7\jetified-library-19.0.1\AndroidManifest.xml:2:1-5:12
+MERGED from [com.qcloud.cos:cos-android:5.6.14] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4e951d7d38fe3788e0b769b402f061cb\cos-android-5.6.14\AndroidManifest.xml:23:1-38:12
+MERGED from [com.qcloud.cos:qcloud-foundation:1.5.31] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\d0bacc7ab6a6e0ff9e4fff7125e00399\qcloud-foundation-1.5.31\AndroidManifest.xml:23:1-37:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\6395f262c472580995287e3ca1edfd2a\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:2:1-39:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\7df26908078c74ff4eeaf46e7b6b476c\appcompat-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\062eb74c1a6fe650432564db4113c6b5\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4f54f5df79d5a3332a02f9d23b00b6ab\glide-4.12.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4f680f5cab482b7966fa9c805ac0cb70\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\ec593f8d91037f6ef1bbcd6a177afa1c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4f8b5527496d67480951cc322460db7f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\d2cae29ea156ecc28d8f5099dc624ed2\transition-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4fe44ae24daa7cfa2dd483a5d3b65a2f\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e7a3e9d286bf64e0013a57a420062bbf\exifinterface-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4932f7e67b26f042b51fa62f1aa4816d\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\8849109129fcb2f39779166fb64480b1\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\00bc847ce5b9e3ce7b40d465bffbf9e9\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\5ad830c9e1047f79e3f0f7e9e42ab8ab\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a3c457ded457b98b207b4f227d629399\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\d1ca7cd3905794bed09cb92934ccd6c2\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\3d4a3c67e39fa8d6d0c0f126c28b81d8\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\3a992d8307f21a8f15eb649383ba6a6a\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\82b148795609bbbaf8e825fc2ff2a6bf\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\fb2fbe77879a57ea0c5dfd6fe59ba874\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\f582580d3eb247a74d915a27810a4674\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\5276819c062a92c029464122749254f1\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\c75155371656c04dff3a027cdeb13e8a\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\53b4a4cf87c0ff501a8c414cec884555\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\94d1bdd9d3f5e77b2c2deb76d0ecef77\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\767612e54049c1347a891905a7e9d5e4\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e671e9f00c2780be6d3d0096a67e519b\gifdecoder-4.12.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4276267baf989d651cf25177c247ad49\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\78be57497ca2a8dd090798c529f3e53d\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4c7e5b6d46acfb24c04b3a473c53b419\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:2:1-156:12
+INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:2:1-156:12
+INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:2:1-156:12
+	package
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:4:5-44
+		INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:2:1-156:12
+		INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:2:1-156:12
+		INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+MERGED from [com.qcloud.cos:cos-android:5.6.14] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4e951d7d38fe3788e0b769b402f061cb\cos-android-5.6.14\AndroidManifest.xml:33:5-67
+MERGED from [com.qcloud.cos:cos-android:5.6.14] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4e951d7d38fe3788e0b769b402f061cb\cos-android-5.6.14\AndroidManifest.xml:33:5-67
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:12:5-67
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:7:5-79
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
+MERGED from [com.qcloud.cos:cos-android:5.6.14] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4e951d7d38fe3788e0b769b402f061cb\cos-android-5.6.14\AndroidManifest.xml:32:5-79
+MERGED from [com.qcloud.cos:cos-android:5.6.14] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4e951d7d38fe3788e0b769b402f061cb\cos-android-5.6.14\AndroidManifest.xml:32:5-79
+MERGED from [com.qcloud.cos:qcloud-foundation:1.5.31] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\d0bacc7ab6a6e0ff9e4fff7125e00399\qcloud-foundation-1.5.31\AndroidManifest.xml:32:5-79
+MERGED from [com.qcloud.cos:qcloud-foundation:1.5.31] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\d0bacc7ab6a6e0ff9e4fff7125e00399\qcloud-foundation-1.5.31\AndroidManifest.xml:32:5-79
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:14:5-79
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:8:5-76
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-76
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-76
+MERGED from [com.qcloud.cos:cos-android:5.6.14] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4e951d7d38fe3788e0b769b402f061cb\cos-android-5.6.14\AndroidManifest.xml:36:5-76
+MERGED from [com.qcloud.cos:cos-android:5.6.14] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4e951d7d38fe3788e0b769b402f061cb\cos-android-5.6.14\AndroidManifest.xml:36:5-76
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:16:5-76
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:16:5-76
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:8:22-73
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:9:5-75
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-75
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-75
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:9:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:10:5-81
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-81
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-81
+MERGED from [com.qcloud.cos:cos-android:5.6.14] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4e951d7d38fe3788e0b769b402f061cb\cos-android-5.6.14\AndroidManifest.xml:35:5-81
+MERGED from [com.qcloud.cos:cos-android:5.6.14] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4e951d7d38fe3788e0b769b402f061cb\cos-android-5.6.14\AndroidManifest.xml:35:5-81
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:18:5-81
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:11:5-80
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-80
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-80
+MERGED from [com.qcloud.cos:cos-android:5.6.14] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4e951d7d38fe3788e0b769b402f061cb\cos-android-5.6.14\AndroidManifest.xml:34:5-80
+MERGED from [com.qcloud.cos:cos-android:5.6.14] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4e951d7d38fe3788e0b769b402f061cb\cos-android-5.6.14\AndroidManifest.xml:34:5-80
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:19:5-80
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:19:5-80
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:11:22-77
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:12:5-71
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-71
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-71
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:23:5-71
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:23:5-71
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:12:22-68
+uses-permission#android.permission.CAMERA
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:13:5-65
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-65
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-65
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:21:5-65
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:21:5-65
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:13:22-62
+uses-feature#android.hardware.camera
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:15:5-60
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-60
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-60
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:15:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:16:5-70
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:5-70
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:5-70
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:16:19-67
+application
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:19:5-154:19
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-29:19
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-29:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.qcloud.cos:qcloud-foundation:1.5.31] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\d0bacc7ab6a6e0ff9e4fff7125e00399\qcloud-foundation-1.5.31\AndroidManifest.xml:34:5-35:19
+MERGED from [com.qcloud.cos:qcloud-foundation:1.5.31] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\d0bacc7ab6a6e0ff9e4fff7125e00399\qcloud-foundation-1.5.31\AndroidManifest.xml:34:5-35:19
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\6395f262c472580995287e3ca1edfd2a\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\6395f262c472580995287e3ca1edfd2a\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:30:5-37:19
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:30:5-37:19
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4f54f5df79d5a3332a02f9d23b00b6ab\glide-4.12.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4f54f5df79d5a3332a02f9d23b00b6ab\glide-4.12.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e671e9f00c2780be6d3d0096a67e519b\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e671e9f00c2780be6d3d0096a67e519b\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\78be57497ca2a8dd090798c529f3e53d\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\78be57497ca2a8dd090798c529f3e53d\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:32:9-35
+	android:label
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:23:9-41
+	tools:ignore
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:26:9-48
+	android:largeHeap
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:24:9-33
+	android:icon
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:22:9-43
+	android:allowBackup
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:21:9-35
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:25:9-40
+	android:usesCleartextTraffic
+		ADDED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:33:9-44
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:20:9-67
+activity#com.tencent.qcloud.xiaoshipin.play.TCVideoPreviewActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:28:9-36:20
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:30:13-49
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:29:13-56
+intent-filter#action:name:android.intent.action.MAIN+action:name:com.tencent.liteav.demo.videopreview+category:name:android.intent.category.DEFAULT
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:31:13-35:29
+action#com.tencent.liteav.demo.videopreview
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:32:17-79
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:32:25-76
+action#android.intent.action.MAIN
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:33:25-66
+category#android.intent.category.DEFAULT
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:34:17-76
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:34:27-73
+activity#com.tencent.qcloud.xiaoshipin.mainui.TCSplashActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:38:9-47:20
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:41:13-49
+	android:launchMode
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:40:13-43
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:42:13-47
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:39:13-81
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:43:13-46:29
+category#android.intent.category.LAUNCHER
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:45:17-77
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:45:27-74
+activity#com.tencent.qcloud.xiaoshipin.login.TCLoginActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:49:9-52:49
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:51:13-49
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:52:13-46
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:50:13-79
+activity#com.tencent.qcloud.xiaoshipin.login.TCRegisterActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:53:9-56:52
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:55:13-49
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:56:13-49
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:54:13-82
+activity#com.tencent.qcloud.xiaoshipin.mainui.TCMainActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:57:9-60:52
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:60:13-49
+	android:launchMode
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:59:13-44
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:58:13-79
+activity#com.tencent.qcloud.xiaoshipin.play.TCVodPlayerActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:62:9-65:59
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:64:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:65:13-56
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:63:13-82
+activity#com.tencent.qcloud.xiaoshipin.videorecord.TCVideoRecordActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:66:9-71:59
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:69:13-49
+	android:launchMode
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:68:13-43
+	android:windowSoftInputMode
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:71:13-56
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:70:13-55
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:67:13-91
+activity#com.tencent.qcloud.xiaoshipin.videorecord.TCVideoFollowRecordActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:72:9-77:59
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:75:13-49
+	android:launchMode
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:74:13-43
+	android:windowSoftInputMode
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:77:13-56
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:76:13-58
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:73:13-97
+activity#com.tencent.qcloud.xiaoshipin.videorecord.TCVideoTripleScreenActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:78:9-83:59
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:81:13-49
+	android:launchMode
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:80:13-43
+	android:windowSoftInputMode
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:83:13-56
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:82:13-58
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:79:13-97
+activity#com.tencent.qcloud.xiaoshipin.videopublish.TCVideoPublisherActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:84:9-87:59
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:86:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:87:13-56
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:85:13-95
+activity#com.tencent.rtmp.video.TXScreenCapture$TXScreenCaptureAssistantActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:88:9-90:64
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:90:13-61
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:89:13-99
+activity#com.umeng.qq.tencent.AssistActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:91:9-95:75
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:94:13-49
+	android:configChanges
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:93:13-74
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:95:13-72
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:92:13-63
+activity#com.tencent.qcloud.xiaoshipin.videochoose.TCPicturePickerActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:96:9-99:58
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:98:13-49
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:99:13-55
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:97:13-93
+activity#com.tencent.qcloud.xiaoshipin.videochoose.TCTripleRecordVideoPickerActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:100:9-103:58
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:102:13-49
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:103:13-55
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:101:13-103
+activity#com.tencent.qcloud.xiaoshipin.videochoose.TCVideoPickerActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:104:9-107:58
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:106:13-49
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:107:13-55
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:105:13-91
+activity#com.tencent.qcloud.xiaoshipin.videojoiner.TCPictureJoinActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:108:9-112:52
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:112:13-49
+	android:launchMode
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:110:13-43
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:111:13-66
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:109:13-91
+activity#com.tencent.qcloud.xiaoshipin.videoeditor.TCVideoCutActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:113:9-116:58
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:115:13-49
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:116:13-55
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:114:13-88
+activity#com.tencent.qcloud.xiaoshipin.videoeditor.TCVideoEditerActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:117:9-121:58
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:120:13-49
+	android:launchMode
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:119:13-44
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:121:13-55
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:118:13-91
+activity#com.tencent.qcloud.xiaoshipin.videoeditor.TCVideoEffectActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:122:9-125:58
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:124:13-49
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:125:13-55
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:123:13-62
+activity#com.tencent.qcloud.xiaoshipin.videojoiner.TCVideoJoinerActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:126:9-129:75
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:128:13-49
+	android:theme
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:129:13-72
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:127:13-91
+activity#com.tencent.qcloud.xiaoshipin.userinfo.TCAboutActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:130:9-91
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:130:19-88
+provider#androidx.core.content.FileProvider
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:132:9-140:20
+	android:grantUriPermissions
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:136:13-47
+	android:authorities
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:134:13-77
+	android:exported
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:135:13-37
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:133:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:137:13-139:53
+	android:resource
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:139:17-50
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:138:17-67
+uses-library#com.google.android.maps
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:142:9-144:40
+	android:required
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:144:13-37
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:143:13-51
+uses-library#android.test.runner
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:145:9-60
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:145:23-57
+activity#com.tencent.qcloud.xiaoshipin.mainui.TCSettingActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:147:9-149:52
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:149:13-49
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:148:13-82
+activity#com.tencent.qcloud.xiaoshipin.mainui.TCLanguagaSettingActivity
+ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:151:9-153:52
+	android:screenOrientation
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:153:13-49
+	android:name
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml:152:13-90
+uses-sdk
+INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\ad9b04747fee410f8b2a24dce3cc4abe\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\ad9b04747fee410f8b2a24dce3cc4abe\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:beautysettingkit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\beautysettingkit\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:beautysettingkit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\beautysettingkit\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\ceb81553a8d4d1147c847656f2ca2121\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\ceb81553a8d4d1147c847656f2ca2121\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.castorflex.verticalviewpager:library:19.0.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a7b23698d840b9cfee5dabeadc619fa7\jetified-library-19.0.1\AndroidManifest.xml:3:5-72
+MERGED from [com.github.castorflex.verticalviewpager:library:19.0.1] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a7b23698d840b9cfee5dabeadc619fa7\jetified-library-19.0.1\AndroidManifest.xml:3:5-72
+MERGED from [com.qcloud.cos:cos-android:5.6.14] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4e951d7d38fe3788e0b769b402f061cb\cos-android-5.6.14\AndroidManifest.xml:28:5-30:41
+MERGED from [com.qcloud.cos:cos-android:5.6.14] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4e951d7d38fe3788e0b769b402f061cb\cos-android-5.6.14\AndroidManifest.xml:28:5-30:41
+MERGED from [com.qcloud.cos:qcloud-foundation:1.5.31] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\d0bacc7ab6a6e0ff9e4fff7125e00399\qcloud-foundation-1.5.31\AndroidManifest.xml:28:5-30:41
+MERGED from [com.qcloud.cos:qcloud-foundation:1.5.31] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\d0bacc7ab6a6e0ff9e4fff7125e00399\qcloud-foundation-1.5.31\AndroidManifest.xml:28:5-30:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\6395f262c472580995287e3ca1edfd2a\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\6395f262c472580995287e3ca1edfd2a\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\7df26908078c74ff4eeaf46e7b6b476c\appcompat-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\7df26908078c74ff4eeaf46e7b6b476c\appcompat-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\062eb74c1a6fe650432564db4113c6b5\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\062eb74c1a6fe650432564db4113c6b5\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4f54f5df79d5a3332a02f9d23b00b6ab\glide-4.12.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4f54f5df79d5a3332a02f9d23b00b6ab\glide-4.12.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4f680f5cab482b7966fa9c805ac0cb70\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4f680f5cab482b7966fa9c805ac0cb70\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\ec593f8d91037f6ef1bbcd6a177afa1c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\ec593f8d91037f6ef1bbcd6a177afa1c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4f8b5527496d67480951cc322460db7f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4f8b5527496d67480951cc322460db7f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\d2cae29ea156ecc28d8f5099dc624ed2\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\d2cae29ea156ecc28d8f5099dc624ed2\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4fe44ae24daa7cfa2dd483a5d3b65a2f\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4fe44ae24daa7cfa2dd483a5d3b65a2f\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e7a3e9d286bf64e0013a57a420062bbf\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e7a3e9d286bf64e0013a57a420062bbf\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4932f7e67b26f042b51fa62f1aa4816d\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4932f7e67b26f042b51fa62f1aa4816d\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\8849109129fcb2f39779166fb64480b1\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\8849109129fcb2f39779166fb64480b1\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\00bc847ce5b9e3ce7b40d465bffbf9e9\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\00bc847ce5b9e3ce7b40d465bffbf9e9\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\5ad830c9e1047f79e3f0f7e9e42ab8ab\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\5ad830c9e1047f79e3f0f7e9e42ab8ab\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a3c457ded457b98b207b4f227d629399\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\a3c457ded457b98b207b4f227d629399\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\d1ca7cd3905794bed09cb92934ccd6c2\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\d1ca7cd3905794bed09cb92934ccd6c2\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\3d4a3c67e39fa8d6d0c0f126c28b81d8\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\3d4a3c67e39fa8d6d0c0f126c28b81d8\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\3a992d8307f21a8f15eb649383ba6a6a\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\3a992d8307f21a8f15eb649383ba6a6a\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\82b148795609bbbaf8e825fc2ff2a6bf\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\82b148795609bbbaf8e825fc2ff2a6bf\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\fb2fbe77879a57ea0c5dfd6fe59ba874\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\fb2fbe77879a57ea0c5dfd6fe59ba874\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\f582580d3eb247a74d915a27810a4674\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\f582580d3eb247a74d915a27810a4674\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\5276819c062a92c029464122749254f1\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\5276819c062a92c029464122749254f1\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\c75155371656c04dff3a027cdeb13e8a\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\c75155371656c04dff3a027cdeb13e8a\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\53b4a4cf87c0ff501a8c414cec884555\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\53b4a4cf87c0ff501a8c414cec884555\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\94d1bdd9d3f5e77b2c2deb76d0ecef77\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\94d1bdd9d3f5e77b2c2deb76d0ecef77\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\767612e54049c1347a891905a7e9d5e4\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\767612e54049c1347a891905a7e9d5e4\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e671e9f00c2780be6d3d0096a67e519b\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e671e9f00c2780be6d3d0096a67e519b\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4276267baf989d651cf25177c247ad49\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4276267baf989d651cf25177c247ad49\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\78be57497ca2a8dd090798c529f3e53d\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\78be57497ca2a8dd090798c529f3e53d\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4c7e5b6d46acfb24c04b3a473c53b419\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\4c7e5b6d46acfb24c04b3a473c53b419\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+		ADDED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\app\src\main\AndroidManifest.xml
+activity#com.tencent.qcloud.ugckit.module.effect.bgm.TCMusicActivity
+ADDED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:9-28:52
+	android:screenOrientation
+		ADDED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-49
+	android:name
+		ADDED from [:ugckit] D:\Work_in_TYYZ\Products\UGC\Android\Demo\9.5.11200\Android\Demo\ugckit\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-87
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:25:5-80
+	android:name
+		ADDED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:25:22-77
+uses-permission#android.permission.BLUETOOTH
+ADDED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:27:5-68
+	android:name
+		ADDED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:27:22-65
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:28:5-76
+	android:name
+		ADDED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:28:22-73
+activity#com.tencent.liteav.video.TXScreenCapture$TXScreenCaptureAssistantActivity
+ADDED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:34:9-36:86
+	android:theme
+		ADDED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:36:13-83
+	android:name
+		ADDED from [com.tencent.liteav:LiteAVSDK_Professional:9.5.11200] C:\Users\jack\.gradle\caches\transforms-2\files-2.1\b4553a7f3cd7d91b97ee5b9723f22254\LiteAVSDK_Professional-9.5.11200\AndroidManifest.xml:35:13-101
