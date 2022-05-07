@@ -1,0 +1,28 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Usage of closures</h2>
+  <p>In the body of a lambda expression we can capture values from a context where the lambda is defined. This technique is called <b>closure</b>.<br></p>
+  <p>Let's see an example.<br></p>
+  <pre></pre>
+  <pre><code>final String hello = "Hello, ";
+Function&lt;String, String&gt; helloFunction = (name) -&gt; hello + name;
+
+System.out.println(helloFunction.apply("John"));
+System.out.println(helloFunction.apply("Anastasia"));</code></pre>
+  <pre></pre>
+  <p>The lambda expression captured the final variable <b>hello</b>.<br></p>
+  <p>The result of this code.<br></p>
+  <pre><code>Hello, John
+Hello, Anastasia</code></pre>
+  <p>It's possible only if a context variable has a keyword <b>final</b><i><b></b></i> or it's <i><b></b></i><b>effectively final</b><i><b></b></i>, i.e. variable can't be changed. Otherwise an error happens.</p>
+  <p>Let's consider the example with an <i></i>effectively final<i></i> variable.<br></p>
+  <pre><code>int constant = 100;
+Function&lt;Integer, Integer&gt; adder = x -&gt; x + constant;
+
+System.out.println(adder.apply(200));
+System.out.println(adder.apply(300));</code></pre>
+  <p>The variable <b>constant</b> is effectively final and being captured by the lambda expression.</p>
+  <p><b>Note. </b>If we use anonymous classes instead of lambdas, we can do the same tricks.<b></b></p>
+ </body>
+</html>

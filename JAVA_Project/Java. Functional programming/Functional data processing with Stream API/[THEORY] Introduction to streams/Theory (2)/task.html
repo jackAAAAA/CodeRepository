@@ -1,0 +1,51 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">How can I create a stream?</h2>
+  <p>There are a lot of ways to create a stream in Java.&nbsp;</p>1) The most common way to take a stream is to create it from a collection. Any collection has a method 
+  <b>stream()</b> for this purpose.
+  <div>
+   <div>
+    <pre><code>List&lt;Integer&gt; famousNumbers = Arrays.asList(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55);
+Stream&lt;Integer&gt; numbersStream = famousNumbers.stream();
+
+Set&lt;String&gt; usefulConcepts = new HashSet&lt;&gt;(Arrays.asList("functions", "lazy", "immutability"));
+Stream&lt;String&gt; conceptsStream = usefulConcepts.stream();</code></pre>
+    <p>2) From an array</p>
+    <pre><code>Stream&lt;Double&gt; doubleStream = Arrays.stream(new Double[]{ 1.01, 1d, 0.99, 1.02, 1d, 0.99 });</code></pre>
+    <p>3) From a string</p>
+    <pre><code>IntStream stream = "aibohphobia".chars(); // It returns IntStream!</code></pre>
+    <p>4) From values<br></p>
+    <pre><code>LongStream longStream = LongStream.of(111_111_111L, 333_333_333L);</code></pre>
+    <div>
+     <br>
+    </div>5) From another streams
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    <pre><code>Stream&lt;BigInteger&gt; concatedStream = Stream.concat(Stream.empty(), Stream.empty());</code></pre>
+    <p>6) Use <b>Stream.generate()</b></p>
+    <pre><code>Stream&lt;User&gt; userStream = Stream.generate(User::new);
+DoubleStream randomStream = DoubleStream.generate(Math::random);</code></pre>
+    <p>7) Use <b>Stream.iterate()</b></p>
+    <pre><code>IntStream oddNumbersStream = IntStream.iterate(1, x -&gt; x + 2);</code></pre>
+    <div></div>8) Use 
+    <b>Stream.range()</b> or 
+    <b>Stream.rangeClosed()</b>. Method 
+    <b>rangeClosed()</b> includes an upper bound.
+   </div>
+   <div>
+    <pre><code>LongStream rangedStream = LongStream.rangeClosed(100_000, 1_000_000);</code></pre>
+   </div>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   There are also other ways to create a stream: from a file, from I/O stream and so on.
+   <br>
+  </div>
+ </body>
+</html>

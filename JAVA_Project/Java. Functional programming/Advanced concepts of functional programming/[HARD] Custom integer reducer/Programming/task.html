@@ -1,0 +1,37 @@
+<html>
+ <head></head>
+ <body>
+  <p>&nbsp;In this problem, you need to complete the implementations of two functions.</p> 
+  <ol> 
+   <li>The <code>reduceIntOperator</code> that accepts <strong>an initial value (seed)</strong> and a<strong> combiner function</strong> and returns a new function that combines all values from the given integer range into a single integer value (it's a simple form of <strong>reduction</strong>) using a given operator. The <strong>seed</strong> is used as the very first element in reducing.</li> 
+   <li>Based on <code>reduceIntOperator</code>, implement the <code>productOperator</code> operator <strong>that multiplies integer values in the range</strong>.</li> 
+  </ol> 
+  <p>There is also an example: the <code>sumOperator</code> that is based on <code>reduceIntOperator</code>. It uses <code>0</code> as the <strong>seed</strong> value and the function <code>x + y</code> and just sums numbers in the range.</p> 
+  <p>Let's take a look at two example of how the operators should work. <strong>The left boundary &lt;= the right boundary</strong>.<br> <br> <strong>Example 1.</strong> Left boundary = 1, right boundary = 4.</p> 
+  <p>To check <code>reduceIntOperator</code> testing system creates and passes an object with type <code>IntBinaryOperator</code> and a seed value. <code>reduceIntOperator</code> produces an object of <code>IntBinaryOperator</code> type, which is used to produce a final <code>int</code> result.</p> 
+  <p>Passed <code>IntBinaryOperator</code> is sum operator.</p> 
+  <pre><code class="language-java">IntBinaryOperator sum = (x, y) -&gt; x + y;
+IntBinaryOperator resultWithSumOperator = reduceIntOperator.apply(5, sum);
+resultWithSumOperator.applyAsInt(1, 4);   // 15 = 5 + (1 + 2 + 3 + 4)</code></pre> 
+  <p>Passed <code>IntBinaryOperator</code> is production operator.</p> 
+  <pre><code class="language-java">IntBinaryOperator multiply = (x, y) -&gt; x * y;
+IntBinaryOperator resultWitMultiplyOperator = reduceIntOperator.apply(5, multiply);
+resultWitMultiplyOperator.applyAsInt(1, 4);   // 120 = 5 * (1 * 2 * 3 * 4)</code></pre> 
+  <p><code>sumOperator</code> and <code>productOperator</code> produces <code>int</code> result:</p> 
+  <pre><code class="language-java">sumOperator.applyAsInt(1, 4);     // 10 = 1 + 2 + 3 + 4
+productOperator.applyAsInt(1, 4); // 24 = 1 * 2 * 3 * 4</code></pre> 
+  <p><strong>Example 2.</strong> Left boundary = 5, right boundary = 6.</p> 
+  <p>Passed <code>IntBinaryOperator</code> is sum operator.</p> 
+  <pre><code class="language-java">IntBinaryOperator sum = (x, y) -&gt; x + y;
+IntBinaryOperator resultWithSumOperator = reduceIntOperator.apply(2, sum);
+resultWithSumOperator.applyAsInt(5, 6);   // 13 = 2 + (5 + 6)</code></pre> 
+  <p>Passed <code>IntBinaryOperator</code> is production operator.</p> 
+  <pre><code class="language-java">IntBinaryOperator multiply = (x, y) -&gt; x * y;
+IntBinaryOperator resultWitMultiplyOperator = reduceIntOperator.apply(2, multiply);
+resultWitMultiplyOperator.applyAsInt(5, 6);   // 60 = 2 * (5 * 6)</code></pre> 
+  <p><code>sumOperator</code> and <code>productOperator</code> produces <code>int</code> result:</p> 
+  <pre><code class="language-java">sumOperator.applyAsInt(5, 6);     // 11 = 5 + 6
+productOperator.applyAsInt(5, 6); // 30 = 5 * 6</code></pre> 
+  <p>﻿﻿If the task seems too hard for you, try to look at the theory lesson again.</p>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>

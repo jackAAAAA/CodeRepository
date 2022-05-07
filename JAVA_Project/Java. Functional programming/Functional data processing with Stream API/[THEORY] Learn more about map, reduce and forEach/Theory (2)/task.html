@@ -1,0 +1,26 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">flatMap<br></h2>
+  <p>The <b>flatMap </b>operation is used to transform each<b> </b>element from a stream into another stream and concatenates all streams into one.<b> </b>For instance, to obtain elements of an internal collection in a class.<b><br></b></p>
+  <p>Let's imagine there is a collection of <b>java books</b> exists. Each book has a title, a year of publishing and a list of authors (only names). It is necessary to obtain a collection of all <b>authors</b> from the list of java books.<b><br></b></p>
+  <p><b></b></p>
+  <pre><code>// the collection of java books
+final List&lt;Book&gt; javaBooks = Stream.of(
+&nbsp; &nbsp; &nbsp; &nbsp; new Book("Java EE 7 Essentials", 2013, Arrays.asList("Arun Gupta")),
+&nbsp; &nbsp; &nbsp; &nbsp; new Book("Algorithms", 2011, Arrays.asList("Robert Sedgewick", "Kevin Wayne")),
+&nbsp; &nbsp; &nbsp; &nbsp; new Book("Clean code", 2014, Arrays.asList("Robert Martin"))
+).collect(Collectors.toList());
+
+// list of authors
+final List&lt;String&gt; authors = javaBooks.stream()
+&nbsp; &nbsp; &nbsp; &nbsp; .flatMap(book -&gt; book.getAuthors().stream())
+        .distinct()
+&nbsp; &nbsp; &nbsp; &nbsp; .collect(Collectors.toList());</code></pre> 
+  <br>The content of 
+  <b>authors</b> list:
+  <br>
+  <pre><code>[Arun Gupta, Robert Sedgewick, Kevin Wayne, Robert Martin]</code></pre>
+  <br>
+ </body>
+</html>

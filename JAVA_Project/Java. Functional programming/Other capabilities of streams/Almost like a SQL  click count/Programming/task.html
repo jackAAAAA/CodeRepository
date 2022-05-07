@@ -1,0 +1,46 @@
+<html>
+ <head></head>
+ <body>
+  There is a 
+  <b>LogEntry</b> class for monitoring user activity on your site. The class has three fields:
+  <br>
+  <ul>
+   <li><b>created: Date </b>- the date of creating log entry</li>
+   <li><b>login: String</b> - a user login</li>
+   <li><b>url: String</b> - a url that the user clicked<br></li>
+  </ul>The class have getters for all fields with the corresponding names (getCreated(), getLogin(), getUrl()). 
+  <br>
+  <b><br></b>Write a collector that calculates 
+  <b>how many times was clicked each </b>
+  <b>url</b>
+  <b> by users</b>. The collector will be applied to a stream of log entries for creating a map: 
+  <b>url</b>
+  <b> -&gt; click count</b>. 
+  <br>
+  <br>
+  <p>The class<b> LogEntry </b>will be available during testing. You can create your own classes for local testing.<br></p>
+  <div>
+   <b>Important.</b> You should write only the collector in 
+   <b>any valid formats but without ; on the end.</b>
+   <br>
+  </div>
+  <div>
+   It will be passed as an argument to the 
+   <b>collect()</b> method of a stream as shown below.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>List&lt;LogEntry&gt; logs = ...
+Map&lt;String, Long&gt; clickCount = 
+        logs.stream()
+            .collect(...your_collector_will_be_passed_here...);</code></pre> 
+   <br>
+   <b>Examples</b> of the valid solution formats: 
+   <b>Collectors.reducing(...)</b> or 
+   <b><b>reducing(...).</b></b>
+   <b></b>
+  </div>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>

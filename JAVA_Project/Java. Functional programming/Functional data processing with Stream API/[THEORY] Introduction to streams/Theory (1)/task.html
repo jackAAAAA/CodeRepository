@@ -1,0 +1,27 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Understanding streams</h2>
+  <p><b>Stream </b>is a tool for data sequences processing in a more functional style. We don't need to use cycles because a stream has an internal optimized cycle. Streams allow you to concentrate on the question "<b>what should the code do?"</b>&nbsp;instead of "<b>how should the code do it?"</b>. In addition, this approach is easy for parallelizing.&nbsp;</p>
+  <p>A stream may seem like a collection. But, actually, a stream doesn't store elements. It conveys elements from a source such as a collection, an array, a generator function, an I/O channel, another stream and so on.<br></p>
+  <p>There are several stream classes in Java: <b>Stream&lt;T&gt;</b>, <b>IntStream</b>, <b>LongStream</b> and <b>DoubleStream</b>. While generic stream works with reference types, three other streams work with corresponding primitive types.&nbsp;Further we will consider what and when is better to use.</p>
+  <p>Let's see an example. It is often necessary to filter a list by a condition and then collect suitable elements in a new list.</p>
+  <pre><code>// the list values is filled with some elements
+List&lt;Integer&gt; values = ...
+List&lt;Integer&gt; filteredValues = new ArrayList&lt;&gt;();
+for (Integer val : values) {
+&nbsp; &nbsp; if (val &gt;= 10) {
+&nbsp; &nbsp; &nbsp; &nbsp; filteredValues.add(val);
+&nbsp; &nbsp; }
+}</code></pre>
+  <p>The cycle with a filtering is an often used construction in data processing.&nbsp;The same functionality with Stream API is shown below.</p>
+  <pre><code>// the list values is filled with some elements
+List&lt;Integer&gt; values = ...
+List&lt;Integer&gt; filteredValues = values.stream()
+        .filter(val -&gt; val &gt;= 10)
+        .collect(Collectors.toList());</code></pre>
+  <p>In this case, we get a stream from a collection, then filter elements by a condition and collect the stream to a new List collection. It's simple enough. The method&nbsp;<b>filter</b> accepts a predicate (in this case, represented by lambda expression) to test each value in the stream.</p>
+  <p><b>IMPORTANT:</b> when we apply method <b>filter</b> to a stream, nothing is evaluated. Only <b>terminal operations</b> begin&nbsp;evaluations (for example, <b>collect</b>).&nbsp;Because of it, streams are called <b>lazy</b>.</p>
+  <p>Further we will consider ways to create streams and some common stream operations.</p>
+ </body>
+</html>

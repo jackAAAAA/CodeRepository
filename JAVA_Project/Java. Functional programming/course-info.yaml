@@ -1,0 +1,16 @@
+type: stepik
+title: Java. Functional programming
+language: English
+summary: "The course introduces elements of functional programming in Java 8. \nAfter\
+  \ completing this course, you will have a basic understanding of lambda expressions,\
+  \ functional interfaces, stream API, lazy evaluation, currying and monads.<br/><br/>Learn\
+  \ more at <a href=\"https://stepik.org/course/1595\">https://stepik.org/course/1595</a>"
+programming_language: Java
+content:
+- Introduction
+- Functional interfaces, lambda expressions and methods references
+- Standard and custom functional interfaces
+- Functional data processing with Stream API
+- Other capabilities of streams
+- Advanced concepts of functional programming
+mode: Study

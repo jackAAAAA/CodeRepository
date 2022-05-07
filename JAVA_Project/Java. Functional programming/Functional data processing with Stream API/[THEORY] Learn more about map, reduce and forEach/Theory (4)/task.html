@@ -1,0 +1,15 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Mapping and reducing with functions</h2>
+  <p>As functions are presented as objects we can map and reduce them like values.</p>
+  <p>For example, we have a collection of integer predicates. Let's negate each predicate using a map operator and then conjunct all predicates into one using a reduce operator.<br></p>
+  <pre><code>public static IntPredicate negateEachAndConjunctAll(Collection&lt;IntPredicate&gt; predicates) {
+    return predicates.stream()
+&nbsp; &nbsp;         .map(IntPredicate::negate)
+&nbsp; &nbsp;         .reduce(n -&gt; true, IntPredicate::and);
+}</code></pre>
+  <p>In this example, <b>map</b> negates each predicate in a stream and then <b>reduce</b> conjuncts all predicates into one. The <b>initial value</b> (seed) of reducing is a predicate that is always true, because it's the neutral value for a conjunction.</p>
+  <p>So, the input predicates <span class="math-tex">\( P_1(x), P_2(x), ..., P_n(x) \)</span> will be reduced into one predicate <span class="math-tex">\( Q(x) = \neg P_1(x) \&amp; \neg P_2(x) \&amp; ... \&amp; \neg P_n(x) \)</span>.</p>
+ </body>
+</html>

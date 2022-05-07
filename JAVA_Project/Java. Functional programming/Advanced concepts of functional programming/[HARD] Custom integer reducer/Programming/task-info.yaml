@@ -1,0 +1,14 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: "/**\n * The operator combines all values in the given range into one value\n\
+    \ * using combiner and initial value (seed)\n */\npublic static final BiFunction<Integer,\
+    \ IntBinaryOperator, IntBinaryOperator> reduceIntOperator = \n\n/**\n * The operator\
+    \ calculates the sum in the given range (inclusively)\n */\npublic static final\
+    \ IntBinaryOperator sumOperator = // write your code here\n\n/**\n * The operator\
+    \ calculates the product in the given range (inclusively)\n */\npublic static\
+    \ final IntBinaryOperator productOperator = // write your code here"
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,37 @@
+<html>
+ <head></head>
+ <body>
+  <p>You have two classes: <b>Employee </b>(name: String, salary: Long)<b></b> and <b>Department </b>(name: String, code: String, employees: List&lt;Employee&gt;)<b></b>.<b></b> Both classes have getters for all fields with the corresponding names (getName(), getSalary(), getEmployees() and so on).</p>
+  <p><b></b>W<b></b>rite a method using Stream API that calculates <b>the general</b> <b>number of employees </b>with <b>salary &gt;= threshold</b> for all departments whose code starts with string <b>"111-" </b>(without ""). Perhaps, <b>flatMap</b> method can help you to implement it.</p>
+  <p>Classes<b> Employee</b> and <b>Department</b> will be available during testing. You can define your own classes for local testing.</p>
+  <p><b>Important. </b>Use the given template for your method. Pay attention to type of an argument and the returned value. Please, use only Stream API, no cycles.</p>
+  <p><b>Examples:</b> there are 2 departments (in JSON notation) below and ﻿threshold = 20 000. The result is 1 (because there is only one suitable employee).<br></p>
+  <pre><code>[
+&nbsp; {
+&nbsp; &nbsp; "name": "dep-1",
+&nbsp; &nbsp; "code": "111-1",
+&nbsp; &nbsp; "employees": [
+&nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; "name": "William",
+&nbsp; &nbsp; &nbsp; &nbsp; "salary": 20000
+&nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; "name": "Sophia",
+&nbsp; &nbsp; &nbsp; &nbsp; "salary": 10000
+&nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; ]
+&nbsp; },
+&nbsp; {
+&nbsp; &nbsp; "name": "dep-2",
+&nbsp; &nbsp; "code": "222-1",
+&nbsp; &nbsp; "employees": [
+&nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; "name": "John",
+&nbsp; &nbsp; &nbsp; &nbsp; "salary": 50000
+&nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; ]
+&nbsp; }
+]﻿﻿</code></pre> 
+  <br>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>

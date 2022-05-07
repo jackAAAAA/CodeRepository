@@ -1,0 +1,31 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: <b>unit (or pure)</b> takes a function and applies it to the value inside
+    a monad
+- text: <b>unit (or pure)</b> takes a value and returns a monad wrapping the value
+- text: <b>bind (or flatMap)</b> takes a function that (the function) accepts a value
+    and returning another value
+- text: <b>bind (or flatMap)</b> takes a function that (the function) accepts a value
+    and returning a monad
+- text: <b>map</b> takes a function that (the function)  accepts a value and returns
+    a value
+- text: <b>map</b> takes a function that (the function) accepts a value and returns
+    a monad
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

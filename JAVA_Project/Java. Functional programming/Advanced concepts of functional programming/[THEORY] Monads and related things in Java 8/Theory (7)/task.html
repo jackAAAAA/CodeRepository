@@ -1,0 +1,86 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Another monad: hand-made Try monad</h2>Another interesting monad no presented in Java 8 is a 
+  <b>Try</b> monad.
+  <div>
+   <br>
+   <div>
+    Throwing exceptions from methods break referential transparency and introduce complex control flow. The 
+    <b>Try</b> 
+    <b></b>monad offers an alternative way to manage exceptions and it allows to hide the boilerplate of repeating
+    <b> try-catch</b> logic. This monad is a bit like 
+    <b>Optional</b>, but it allows to process any type of exceptions and wraps a value or an exception inside.
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    Note, the 
+    <b>Try</b> monad is built-in in the Scala standard library.
+    <div>
+     <div>
+      <br>
+     </div>
+     <div>
+      The monad 
+      <b>Try&lt;T&gt;</b> may be 
+      <b>success</b> or 
+      <b>failure</b> (if an exception happened). A typical implementation of this includes all considered "monadic-like" operations.
+     </div>
+     <div>
+      <br>
+     </div>
+     <div>
+      <p><b>unit</b><br></p>
+      <ul>
+       <li><b>Try.succes(T value)</b> accepts a value and returns <b>sucess try</b>.<br></li>
+       <li><b>Try.failure(String msg)</b> accepts a string (a message) and returns <b>failure try</b>.<br></li>
+       <li><b>Try.failure(Exception e)</b> accepts an exception and returns<b> failure try</b>.</li>
+      </ul>
+      <p><b>bind</b><br></p>
+      <ul>
+       <li><b>flatMap(Function&lt;? super T, Optional&lt;U&gt;&gt; mapper) </b>applies the given function to a value if <b>success</b> and then returns new <b>success try</b>, otherwise returns the <b>failure try.</b></li>
+      </ul>
+      <p><b>map</b><br></p>
+      <ul>
+       <li><b>map(Function&lt;? super T, ? extends U&gt; mapper) </b>applies the given function to a value if <b>succes</b> and then returns new <b>success try</b>, or otherwise returns the <b>failure try.</b></li>
+      </ul>
+     </div>
+     <div>
+      <div>
+       <div>
+        <br>
+       </div>
+       <div>
+        Other useful methods:
+        <br>
+       </div>
+       <div>
+        <ul>
+         <li><b>isSuccess()</b> returns true if success otherwise false<br></li>
+         <li><b>isFailure()</b> returns true if failure otherwise false<br></li>
+         <li><b>recover(Function&lt;? super Throwable, T&gt; f)</b> applies the given function if failure, otherwise returns the current <b>success</b>.<br></li>
+         <li><b>recoverWith(Function&lt;? super Throwable, Try&lt;T&gt;&gt; f)</b> applies the given function if failure, otherwise returns <b>success</b>.<br></li>
+         <li><b>toOptional()</b> returns optional of T if success, otherwise empty optional.<br></li>
+        </ul>
+       </div>
+       <div>
+        <br>
+       </div>
+       <div>
+        <p>See hand-made java implementations of <b>Try</b> monad here:</p>
+        <ul>
+         <li><a href="https://dzone.com/articles/whats-wrong-java-8-part-iv" rel="nofollow noopener noreferrer" title="Link: https://dzone.com/articles/whats-wrong-java-8-part-iv">https://dzone.com/articles/whats-wrong-java-8-part-iv</a></li>
+         <li><a href="https://github.com/aol/cyclops/wiki/try-:-functional-exception-handling-for-java-8" rel="nofollow noopener noreferrer" title="Link: https://github.com/aol/cyclops/wiki/try-:-functional-exception-handling-for-java-8">https://github.com/aol/cyclops/wiki/try-:-functional-exception-handling-for-java-8</a></li>
+         <li><a href="https://github.com/jasongoodwin/better-java-monads" rel="nofollow noopener noreferrer" title="Link: https://github.com/jasongoodwin/better-java-monads">https://github.com/jasongoodwin/better-java-monads</a></li>
+        </ul>By this, we finished the consideration of the monads.
+        <br>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+ <head></head>
+ <body>
+  Write a collector that evaluates the product of squares of integer numbers in a 
+  <b>Stream&lt;Integer&gt;</b>.
+  <br>
+  <div>
+   <br>
+  </div>
+  <div>
+   <b>Important.</b> You should write only the collector in 
+   <b>any valid formats but without ; on the end.</b> 
+   <b><br></b>
+  </div>
+  <div>
+   It will be passed as an argument to the 
+   <b>collect() </b>method of a stream as shown below.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>List&lt;Integer&gt; numbers = ...
+long val = numbers.stream().collect(...your_collector_will_be_passed_here...);</code></pre> 
+   <br>
+  </div>
+  <div>
+   <b>Examples</b> of the valid solution formats: 
+   <b>Collectors.reducing(...)</b>
+   <b> </b>or
+   <b> reducing(...).</b>
+   <b><br></b>
+  </div>
+  <div>
+   <b></b>
+  </div>
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">0 1 2 3<br></code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">0</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">1 2<br></code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">4</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>

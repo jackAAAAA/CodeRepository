@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 开始ConstraintSet集合  -->
+    <ConstraintSet android:id="@+id/start">
+
+        <!-- 开始位置 文字——亚萍 屏幕右侧 -->
+        <Constraint android:id="@id/s1">
+            <Layout
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/n"
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/textColor"/>
+        </Constraint>
+
+        <Constraint android:id="@id/s2">
+            <Layout
+                app:layout_constraintEnd_toEndOf="@id/s1"
+                app:layout_constraintTop_toBottomOf="@id/j"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/textColor"/>
+        </Constraint>
+
+        <!-- 开始位置 文字——七夕节快乐 屏幕左侧 -->
+        <Constraint android:id="@id/n">
+            <Layout
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/textColor"/>
+        </Constraint>
+
+        <Constraint android:id="@id/s">
+            <Layout
+                app:layout_constraintStart_toStartOf="@id/n"
+                app:layout_constraintTop_toBottomOf="@id/n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/textColor"/>
+        </Constraint>
+
+        <Constraint android:id="@id/j">
+            <Layout
+                app:layout_constraintStart_toStartOf="@id/s"
+                app:layout_constraintTop_toBottomOf="@id/s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/textColor"/>
+        </Constraint>
+
+        <Constraint android:id="@id/k">
+            <Layout
+                app:layout_constraintStart_toStartOf="@id/j"
+                app:layout_constraintTop_toBottomOf="@id/j"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/textColor"/>
+        </Constraint>
+
+        <Constraint android:id="@id/l">
+            <Layout
+                app:layout_constraintStart_toStartOf="@id/k"
+                app:layout_constraintTop_toBottomOf="@id/k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/textColor"/>
+        </Constraint>
+
+        <!-- 开始位置 ImageView1 屏幕居中 -->
+        <Constraint
+            android:id="@id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <!-- 开始位置 ImageView2 屏幕左上角 与上一个ImageView重叠 -->
+        <Constraint
+            android:id="@id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- 开始位置 ImageView3 屏幕左上角 与上一个ImageView重叠 -->
+        <Constraint
+            android:id="@id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- 开始位置 ImageView4 屏幕左上角 与上一个ImageView重叠 -->
+        <Constraint
+            android:id="@id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- 开始位置 ImageView5 屏幕左上角 与上一个ImageView重叠 -->
+        <Constraint
+            android:id="@id/imageView5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </ConstraintSet>
+
+    <!-- 结束ConstraintSet集合  -->
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint android:id="@id/s1">
+            <Layout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.2"
+                app:layout_constraintEnd_toStartOf="@id/j"
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/cardview_dark_background"/>
+        </Constraint>
+
+        <Constraint android:id="@id/s2">
+            <Layout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.2"
+                app:layout_constraintStart_toEndOf="@id/j"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/cardview_dark_background"/>
+        </Constraint>
+
+
+        <Constraint android:id="@id/n">
+            <Layout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.35"
+                app:layout_constraintEnd_toStartOf="@id/s"
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/colorPrimary"/>
+        </Constraint>
+
+        <Constraint android:id="@id/s">
+            <Layout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.35"
+                app:layout_constraintEnd_toStartOf="@id/j"
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/colorAccent"/>
+        </Constraint>
+
+        <Constraint android:id="@id/j">
+            <Layout
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/colorBookMark"/>
+        </Constraint>
+
+        <Constraint android:id="@id/k">
+            <Layout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.35"
+                app:layout_constraintStart_toEndOf="@id/j"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/colorPrimaryDark"/>
+        </Constraint>
+
+        <Constraint android:id="@id/l">
+            <Layout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.35"
+                app:layout_constraintStart_toEndOf="@id/k"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/design_default_color_error"/>
+        </Constraint>
+
+
+
+
+        <!-- 结束位置 ImageView1 屏幕底部布局左边位置 -->
+        <Constraint
+            android:id="@id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <!-- 结束位置 ImageView2 屏幕底部 ImageView1和ImageView3中间位置 -->
+        <Constraint
+            android:id="@id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/imageView1"
+            app:layout_constraintRight_toLeftOf="@id/imageView3" />
+
+        <!-- 结束位置 ImageView3 屏幕底部中间位置 -->
+        <Constraint
+            android:id="@id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <!-- 结束位置 ImageView4 屏幕底部 ImageView3和ImageView5中间位置 -->
+        <Constraint
+            android:id="@id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/imageView3"
+            app:layout_constraintRight_toLeftOf="@id/imageView5" />
+
+        <!-- 结束位置 ImageView5 屏幕底部布局右边位置 -->
+        <Constraint
+            android:id="@id/imageView5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </ConstraintSet>
+
+    <!-- 动画轨迹  指定开始&结束的ConstraintSet 以及动画持续的时间-->
+    <Transition
+        app:constraintSetStart="@id/start"
+        app:constraintSetEnd="@id/end"
+        app:duration="3000">
+
+        <!-- 动画开始的方式是 点击 ImageView1 -->
+        <OnClick
+            app:clickAction="toggle"
+            app:targetId="@id/imageView1" />
+
+        <!-- KeyFrameSet集合 -->
+        <KeyFrameSet>
+
+            <KeyPosition
+                app:framePosition="50"
+                app:motionTarget="@id/s1"
+                app:percentX="0.3"
+                app:percentY="0.1"
+                app:keyPositionType="parentRelative"/>
+
+            <KeyPosition
+                app:framePosition="50"
+                app:motionTarget="@id/s2"
+                app:percentX="0.3"
+                app:percentY="0.1"
+                app:keyPositionType="parentRelative"/>
+
+            <KeyPosition
+                app:framePosition="50"
+                app:motionTarget="@id/n"
+                app:percentX="0.3"
+                app:percentY="0.2"
+                app:keyPositionType="parentRelative"/>
+
+            <KeyPosition
+                app:framePosition="50"
+                app:motionTarget="@id/s"
+                app:percentX="0.3"
+                app:percentY="0.2"
+                app:keyPositionType="parentRelative"/>
+
+            <KeyPosition
+                app:framePosition="50"
+                app:motionTarget="@id/j"
+                app:percentX="0.3"
+                app:percentY="0.2"
+                app:keyPositionType="parentRelative"/>
+
+            <KeyPosition
+                app:framePosition="50"
+                app:motionTarget="@id/k"
+                app:percentX="0.3"
+                app:percentY="0.2"
+                app:keyPositionType="parentRelative"/>
+
+            <KeyPosition
+                app:framePosition="50"
+                app:motionTarget="@id/l"
+                app:percentX="0.3"
+                app:percentY="0.2"
+                app:keyPositionType="parentRelative"/>
+
+            <!-- ImageView1的轨迹位置 整个运动的[0,8%]-->
+            <KeyPosition
+                app:framePosition="8"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView1"
+                app:percentX="0.65"
+                app:percentY="0.4" />
+
+            <!-- ImageView1的轨迹位置 整个运动的[8%,16%]-->
+            <KeyPosition
+                app:framePosition="16"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView1"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.8"
+                app:percentY="0.5" />
+
+            <!-- ImageView1的轨迹位置 整个运动的[16%,40%]-->
+            <KeyPosition
+                app:framePosition="40"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView1"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.5"
+                app:percentY="0.8" />
+
+            <!-- ImageView1的轨迹位置 整个运动的[40%,64%]-->
+            <KeyPosition
+                app:framePosition="64"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView1"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.2"
+                app:percentY="0.5" />
+
+            <!-- ImageView1的轨迹位置 整个运动的[64%,72%]-->
+            <KeyPosition
+                app:framePosition="72"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView1"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.35"
+                app:percentY="0.4" />
+
+            <!-- ImageView1的轨迹位置 整个运动的[72%,80%]-->
+            <KeyPosition
+                app:framePosition="80"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView1"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.5"
+                app:percentY="0.5" />
+
+            <!-- ImageView1的轨迹位置 整个运动的[80%,90%]-->
+            <KeyPosition
+                app:framePosition="90"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView1"
+                app:pathMotionArc="none"
+                app:percentX="0.5"
+                app:percentY="0.8" />
+
+            <!-- ImageView2的轨迹位置 整个运动的[0,10%]-->
+            <KeyPosition
+                app:framePosition="10"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView2"
+                app:percentX="0.65"
+                app:percentY="0.4" />
+
+            <!-- ImageView2的轨迹位置 整个运动的[10%,18%]-->
+            <KeyPosition
+                app:framePosition="18"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView2"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.8"
+                app:percentY="0.5" />
+
+            <!-- ImageView2的轨迹位置 整个运动的[18%,42%]-->
+            <KeyPosition
+                app:framePosition="42"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView2"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.5"
+                app:percentY="0.8" />
+
+            <!-- ImageView2的轨迹位置 整个运动的[42%,66%]-->
+            <KeyPosition
+                app:framePosition="66"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView2"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.2"
+                app:percentY="0.5" />
+
+            <!-- ImageView2的轨迹位置 整个运动的[66%,74%]-->
+            <KeyPosition
+                app:framePosition="74"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView2"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.35"
+                app:percentY="0.4" />
+
+            <!-- ImageView2的轨迹位置 整个运动的[74%,82%]-->
+            <KeyPosition
+                app:framePosition="82"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView2"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.5"
+                app:percentY="0.5" />
+
+            <!-- ImageView2的轨迹位置 整个运动的[82%,9%]-->
+            <KeyPosition
+                app:framePosition="90"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView2"
+                app:pathMotionArc="none"
+                app:percentX="0.5"
+                app:percentY="0.8" />
+
+            <!-- ImageView3的轨迹位置 整个运动的[0%,12%]-->
+            <KeyPosition
+                app:framePosition="12"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView3"
+                app:percentX="0.65"
+                app:percentY="0.4" />
+
+            <!-- ImageView3的轨迹位置 整个运动的[12%,22%]-->
+            <KeyPosition
+                app:framePosition="22"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView3"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.8"
+                app:percentY="0.5" />
+
+            <!-- ImageView3的轨迹位置 整个运动的[22%,44%]-->
+            <KeyPosition
+                app:framePosition="44"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView3"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.5"
+                app:percentY="0.8" />
+
+            <!-- ImageView3的轨迹位置 整个运动的[44%,68%]-->
+            <KeyPosition
+                app:framePosition="68"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView3"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.2"
+                app:percentY="0.5" />
+
+            <!-- ImageView3的轨迹位置 整个运动的[68%,76%]-->
+            <KeyPosition
+                app:framePosition="76"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView3"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.35"
+                app:percentY="0.4" />
+
+            <!-- ImageView3的轨迹位置 整个运动的[76%,84%]-->
+            <KeyPosition
+                app:framePosition="84"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView3"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.5"
+                app:percentY="0.5" />
+
+            <!-- ImageView3的轨迹位置 整个运动的[85%,90%]-->
+            <KeyPosition
+                app:framePosition="90"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView3"
+                app:pathMotionArc="none"
+                app:percentX="0.5"
+                app:percentY="0.8" />
+
+
+            <!-- ImageView4的轨迹位置 整个运动的[0,10%]-->
+            <KeyPosition
+                app:framePosition="12"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView4"
+                app:percentX="0.65"
+                app:percentY="0.4" />
+
+            <!-- ImageView4的轨迹位置 整个运动的[10%,18%]-->
+            <KeyPosition
+                app:framePosition="18"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView4"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.8"
+                app:percentY="0.5" />
+
+            <!-- ImageView4的轨迹位置 整个运动的[18%,42%]-->
+            <KeyPosition
+                app:framePosition="42"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView4"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.5"
+                app:percentY="0.8" />
+
+            <!-- ImageView4的轨迹位置 整个运动的[42%,66%]-->
+            <KeyPosition
+                app:framePosition="66"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView4"
+                app:pathMotionArc="flip"
+                app:percentX="0.2"
+                app:percentY="0.5" />
+
+            <!-- ImageView4的轨迹位置 整个运动的[66%,74%]-->
+            <KeyPosition
+                app:framePosition="74"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView4"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.35"
+                app:percentY="0.4" />
+
+            <!-- ImageView4的轨迹位置 整个运动的[74%,82%]-->
+            <KeyPosition
+                app:framePosition="82"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView4"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.5"
+                app:percentY="0.5" />
+
+            <!-- ImageView4的轨迹位置 整个运动的[82%,90%]-->
+            <KeyPosition
+                app:framePosition="90"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView4"
+                app:pathMotionArc="none"
+                app:percentX="0.5"
+                app:percentY="0.8" />
+
+            <!-- ImageView5的轨迹位置 整个运动的[0,8%]-->
+            <KeyPosition
+                app:framePosition="8"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView5"
+                app:percentX="0.65"
+                app:percentY="0.4" />
+
+            <!-- ImageView5的轨迹位置 整个运动的[8%,16%]-->
+            <KeyPosition
+                app:framePosition="16"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView5"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.8"
+                app:percentY="0.5" />
+
+            <!-- ImageView5的轨迹位置 整个运动的[16%,40%]-->
+            <KeyPosition
+                app:framePosition="40"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView5"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.5"
+                app:percentY="0.8" />
+
+            <!-- ImageView5的轨迹位置 整个运动的[40%,64%]-->
+            <KeyPosition
+                app:framePosition="64"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView5"
+                app:pathMotionArc="flip"
+                app:percentX="0.2"
+                app:percentY="0.5" />
+
+            <!-- ImageView5的轨迹位置 整个运动的[64%,72%]-->
+            <KeyPosition
+                app:framePosition="72"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView5"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.35"
+                app:percentY="0.4" />
+
+            <!-- ImageView5的轨迹位置 整个运动的[72%,80%]-->
+            <KeyPosition
+                app:framePosition="80"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView5"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.5"
+                app:percentY="0.5" />
+
+            <!-- ImageView5的轨迹位置 整个运动的[80%,90%]-->
+            <KeyPosition
+                app:framePosition="90"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/imageView5"
+                app:pathMotionArc="none"
+                app:percentX="0.5"
+                app:percentY="0.8" />
+
+        </KeyFrameSet>
+
+    </Transition>
+
+</MotionScene>

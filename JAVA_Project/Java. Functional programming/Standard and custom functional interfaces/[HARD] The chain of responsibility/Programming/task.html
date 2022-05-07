@@ -1,0 +1,23 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">The design problem</h2> 
+  <p>There is a class called <code class="language-xml">Request(data: String)</code> for representing some XML requests in a payment system. It has a getter for the data field and a constructor with a single argument.</p> 
+  <p>The following is what the value of <code class="language-xml">data</code> looks like in a human-readable format (it is a single line string when processing).</p> 
+  <pre><code class="language-xml">&lt;request&gt;
+&nbsp;&nbsp;&lt;transaction&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;type&gt;payment&lt;/type&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;sum&gt;100000&lt;/sum&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;order_id&gt;e94dc619-6172-4ffe-aae8-63112c551570&lt;/order&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;desc&gt;We'd&nbsp;like&nbsp;to&nbsp;buy&nbsp;an&nbsp;elephant&lt;/desc&gt;
+&nbsp;&nbsp;&lt;/transaction&gt;
+&nbsp;&nbsp;&lt;digest&gt;CZVMYTgc3iiOdJjFP+6dhQ==&lt;/digest&gt;
+&lt;/request&gt;</code></pre> 
+  <p>You must implement <strong>the chain of responsibility pattern</strong> in the functional style for stage-by-stage request creating.</p> 
+  <p>1) Write the <code class="language-xml">RequestHandler</code> interface with a single abstract method called <code class="language-xml">handle</code><strong> </strong>and one default method; the first method is needed to use lambda expressions. It should accept a <code class="language-xml">Request</code> object and then return a new <code class="language-xml">Request</code> with changed data. The second method is used to combine several handlers into a single one.</p> 
+  <p>2) Create <code class="language-xml">commonRequestHandler</code> that is combined from three existing handlers: <code class="language-xml">wrapInTransactionTag</code>, <code class="language-xml">createDigest</code> and <code class="language-xml">wrapInRequestTag</code>.</p> 
+  <p><strong>It is important</strong> to use the provided template for your solution. Please, do not change it and read comments within the code. The template is long enough, scroll it to the bottom. <strong>All comments where your code is expected start with !!!</strong></p> 
+  <p>You can look at an example in the next step.</p> 
+  <p>Keep in mind, all handlers have been already implemented and they are available for you. You need to write only a suitable functional interface and compose all existing handlers as functions into one <code class="language-xml">commonRequestHandler</code> to follow the described algorithm.</p>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>

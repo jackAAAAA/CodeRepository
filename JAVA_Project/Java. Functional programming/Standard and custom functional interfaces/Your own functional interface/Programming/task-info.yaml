@@ -1,0 +1,14 @@
+type: code
+files:
+- name: src/TernaryIntPredicate.java
+  visible: true
+  text: |-
+    @FunctionalInterface
+    public interface TernaryIntPredicate {
+    // Write a method here
+    }
+
+    public static final TernaryIntPredicate allValuesAreDifferentPredicate = // Write a lambda expression here
+  learner_created: false
+status: Unchecked
+record: -1

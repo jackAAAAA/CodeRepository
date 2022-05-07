@@ -1,0 +1,30 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Optional is a monad</h2>
+  <p>Java 8 introduces a new class <b>Optional&lt;T&gt;</b> that encapsulates the presence or absence of a value of type T. The instance of <b>Optional&lt;T&gt;</b> may be <b>empty</b> or <b>non-empty</b>. It allows you to avoid null reference and reduces boilerplate code for checking nulls.</p>
+  <p>It has a lot of useful methods, let's consider "monadic" method of<b> Optional&lt;T&gt;</b>.<br></p>
+  <p><b>unit</b><br></p>
+  <ul>
+   <li><b>Optional.of(T value)</b> accepts a value and returns non-empty optional or throws an exception if argument is null.<br></li>
+   <li><b>Optional.ofNullable(T value)</b> accepts a value or null and corresponding returns an optional wrapping value or empty optional. <br></li>
+   <li><b>Optional.empty()</b> returns empty optional.<br></li>
+  </ul>
+  <p><b>bind</b><br></p>
+  <ul>
+   <li><b>flatMap(Function&lt;? super T, Optional&lt;U&gt;&gt; mapper) </b>applies the given function to a value if present and then returns new optional, otherwise returns an empty optional.</li>
+  </ul>
+  <p>So, <b>Optional&lt;T&gt;</b> is a monad with several unit functions and the bind function.<br></p>
+  <p><b>map (additional "monadic-like" method)</b><br></p>
+  <ul>
+   <li><b>map(Function&lt;? super T, ? extends U&gt; mapper) </b>applies the given function to a value if present and then returns new optional, otherwise returns an empty optional. In difference of <b>flatMap</b> it accepts a <b></b>function<b> </b>that returns a value. It's a very useful in practice method.<br></li>
+  </ul>
+  <p>Other useful methods (not all):</p>
+  <ul>
+   <li><b>isPresent()</b> returns true if a value is present otherwise false.</li>
+   <li><b>ifPresent(Consumer&lt;? super T&gt; consumer)</b> invokes the given consumer if a value is present, otherwise, do nothing.</li>
+   <li><b>get()</b> returns a value if present otherwise throws an exception.<br></li>
+   <li><b>orElse(T other)</b> returns the value if present otherwise returns the <b>other</b>.</li>
+  </ul>
+ </body>
+</html>

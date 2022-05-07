@@ -1,0 +1,210 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;"><b></b>Optional: avoiding nulls</h2>
+  <div>
+   <br>
+  </div>
+  <div>
+   For example, we have three classes:
+  </div>
+  <div>
+   <ul>
+    <li><b></b>User (firstName: String, lastName: String, account: Account)<br></li>
+    <li>Account (guid: UUID, bank: Bank, balance: Long)</li>
+    <li>Bank (uniqueNumber: String, name: String)<b></b></li>
+   </ul>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   A user may ﻿have an account and may not be. It's strange, but an account may have null in the bank field and a bank ﻿may have no name.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   Let's write a method that finds a bank name for the given user if the user has an account, an account is registered in the bank, and the bank has name. Otherwise, it should returns a special value 
+   <b>&lt;No bank found&gt;</b>. Note, that the methods argument may be null as well.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <b>1) The first way. </b>There are no
+   <b></b> monads.
+   <b></b>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>public static String getBankNameWhereUserHasAccount(User user) {
+&nbsp; &nbsp; final String error = "&lt;No bank found&gt;";
+
+&nbsp; &nbsp; if (user == null) {
+&nbsp; &nbsp; &nbsp; &nbsp; return error;
+&nbsp; &nbsp; }
+
+&nbsp; &nbsp; final Account account = user.getAccount();
+&nbsp; &nbsp; if (account == null) {
+&nbsp; &nbsp;     return error;
+&nbsp; &nbsp; }
+
+&nbsp; &nbsp; final Bank bank = account.getBank();
+&nbsp; &nbsp; if (account.getBank() == null) {
+&nbsp; &nbsp; &nbsp; &nbsp; return error;
+&nbsp; &nbsp; }
+
+&nbsp; &nbsp; if (bank.getName() == null) {
+&nbsp; &nbsp; &nbsp; &nbsp; return error;
+&nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; return bank.getName();
+}</code></pre> 
+   <br>
+  </div>
+  <div>
+   Wow! A lot of boilerplate, it's not a concise code.
+  </div>
+  <div>
+   Of course, we could write this code a little different. But it always be non-declarative code. And it is just an example!
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <b>2) The second way. </b>Let's try to avoid nulls using Optional monad.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   We need to rewrite our domain model a little:
+  </div>
+  <div>
+   <ul>
+    <li><b></b>User (firstName: String, lastName: String,<b> </b><i><b></b></i><b>account: Optional&lt;Account&gt;</b><i><b></b></i>)<br></li>
+    <li>Account (guid: UUID, <i></i><b>bank: Optional&lt;Bank&gt;</b><i></i>, balance: Long)<br></li>
+    <li>Bank (uniqueNumber: String, name: <b>Optional&lt;String&gt;</b>)<b><br></b></li>
+   </ul>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   Now, it's possible to get bank name for user this way:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>public static String getBankNameWhereUserHasAccount(User user) {
+&nbsp; &nbsp; return Optional.ofNullable(user)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .flatMap(User::getAccount)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .flatMap(Account::getBank)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .flatMap(Bank::getName)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .orElse("&lt;No bank found&gt;");
+}</code></pre> 
+   <br>
+  </div>
+  <p>It became much better - the code is more concise and readable.</p>
+  <p>Let's write a client code and run it.</p>
+  <pre><code>final Bank bank = new Bank("010122113", Optional.ofNullable("The Great &amp; Reliable Bank"));
+final Account account = new Account(UUID.randomUUID(), Optional.ofNullable(bank), 1000L);
+final User user = new User("Lesly", "Hawk", Optional.ofNullable(account));
+
+System.out.println(getBankNameWhereUserHasAccount(user));</code></pre>
+  <p>The result is:</p>
+  <pre><code>The Great &amp; Reliable Bank</code></pre>
+  <div>
+   <br>
+  </div>
+  <div>
+   We can pass a null in any of 
+   <b>Optional.ofNullable(...)</b>, then the result is:
+   <br>
+  </div>
+  <div>
+   <pre><code>&lt;No bank found&gt;</code></pre>
+   <div>
+    <br>
+   </div>
+   <div>
+    <b>3) The third way. </b>Let's try to avoid nulls using Optional monad without rewriting the domain model.
+    <br>
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    We returned our first domain model without optional values in the class fields. But we still can write a concise code as in a second way. We need to use 
+    <b>map </b>method instead of 
+    <b>flatMap. </b>I
+    <b></b>n this course, we consider 
+    <b>map</b> as an additional method for a base monad concept, because it may be combined using the base monad methods. The code is shown below.
+   </div>
+   <div>
+    <b></b>
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    <pre><code>public static String getBankNameWhereUserHasAccount(User user) {
+&nbsp; &nbsp; return Optional.ofNullable(user)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .map(User::getAccount)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .map(Account::getBank)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .map(Bank::getName)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .orElse("&lt;No bank found&gt;");
+}</code></pre> 
+    <br>
+   </div>
+  </div>
+  <div>
+   The client code:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>final Bank bank = new Bank("010122113", "The Great &amp; Reliable Bank");
+final Account account = new Account(UUID.randomUUID(), bank, 1000L);
+final User user = new User("Lesly", "Hawk", account);
+
+System.out.println(getBankNameWhereUserHasAccount(user));</code></pre> 
+   <br>
+  </div>
+  <div>
+   The result is the same as before.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <b>Conclusion.</b> We considered three ways to write the same code with/without monad Optional.
+  </div>
+  <div>
+   <b>The first way</b> is not very readable and has a lot of boilerplate (if, if, if). If your object composition is more deepest you can forget to make a "not null test" and get a 
+   <b>NullPointerException</b>.
+  </div>
+  <div>
+   <b>The second way</b> is very concise and readable but it demanded to change the domain model. Often, it's not a very good idea, because the fields will be not serializable.
+  </div>
+  <div>
+   <b>The third way </b>is also very concise and readable and does not demand to change a domain model. It's often preferred way. The method map is very useful in practice but not forget about flatMap as well.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   Use cases for Optional:
+  </div>
+  <div>
+   <ul>
+    <li><a href="https://dzone.com/articles/java-8-optional-use-cases" rel="nofollow noopener noreferrer" title="Link: https://dzone.com/articles/java-8-optional-use-cases">https://dzone.com/articles/java-8-optional-use-cases</a><br></li>
+   </ul>
+  </div>
+ </body>
+</html>

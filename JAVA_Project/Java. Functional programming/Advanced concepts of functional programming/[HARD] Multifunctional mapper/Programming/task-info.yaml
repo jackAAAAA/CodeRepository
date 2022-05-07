@@ -1,0 +1,52 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: "import java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.*;\n\
+    import java.util.Scanner;\nimport java.util.function.*;\nimport java.util.stream.*;\n\
+    import static java.util.stream.Collectors.*;\n\nclass MultifunctionalMapper {\n\
+    \n    /**\n     * The function accepts a list of mappers and returns an operator\
+    \ that accepts a list of integers\n     * and sequentially applies each mapper\
+    \ to each value (perform a transformation)\n     */\n    public static final Function<List<IntUnaryOperator>,\
+    \ UnaryOperator<List<Integer>>> multifunctionalMapper =\n\n    /**\n     * EXAMPLE:\
+    \ the operator transforms each number to the same number (perform the identity\
+    \ transformation)\n     *\n     * It returns a list of the same numbers.\n   \
+    \  */\n    public static final UnaryOperator<List<Integer>> identityTransformation\
+    \ =\n            multifunctionalMapper.apply(Arrays.asList(x -> x, x -> x, x ->\
+    \ x));\n\n    /**\n     * The operator accepts an integer list. \n     * It multiplies\
+    \ by two each integer number and then add one to its.\n     * \n     * The operator\
+    \ returns transformed integer list.\n     */\n    public static final UnaryOperator<List<Integer>>\
+    \ multTwoAndThenAddOneTransformation =\n\n    /**\n     * The operator accepts\
+    \ an integer list. \n     * It squares each integer number and then get the next\
+    \ even number following it.\n     * \n     * The operator returns transformed\
+    \ integer list.\n     */\n    public static final UnaryOperator<List<Integer>>\
+    \ squareAndThenGetNextEvenNumberTransformation =\n\n\n    // Please, do not change\
+    \ the code below\n    public static void main(String[] args) {\n        Scanner\
+    \ scanner = new Scanner(System.in);\n        String[] values = scanner.nextLine().split(\"\
+    \ \");\n\n        List<Integer> numbers = Arrays.stream(values)\n            \
+    \    .mapToInt(Integer::parseInt)\n                .boxed()\n                .collect(Collectors.toList());\n\
+    \n        List<Integer> idMapper = multifunctionalMapper\n                .apply(Arrays.asList(x\
+    \ -> x, x -> x, x -> x))\n                .apply(numbers);\n\n        List<Integer>\
+    \ idTransfomarmation =\n                identityTransformation.apply(numbers);\n\
+    \n        List<Integer> mult2AndAdd1Mapper = multifunctionalMapper\n         \
+    \       .apply(Arrays.asList(x -> x * 2, x -> x + 1))\n                .apply(numbers);\n\
+    \n        List<Integer> mult2AndAdd1Tranformation =\n                multTwoAndThenAddOneTransformation.apply(numbers);\n\
+    \n        List<Integer> squareAndNextEvenMapper = multifunctionalMapper\n    \
+    \            .apply(Arrays.asList(x -> x * x, x -> x % 2 == 0 ? x + 2 : x + 1))\n\
+    \                .apply(numbers);\n\n        List<Integer> squareAndNextEvenNumberTransformation\
+    \ =\n                squareAndThenGetNextEvenNumberTransformation.apply(numbers);\n\
+    \n        String space = \"    \";\n        StringBuilder result = new StringBuilder(\"\
+    \");\n        result.append(getStringFromList(idMapper)).append(space);\n    \
+    \    result.append(getStringFromList(idTransfomarmation)).append(space);\n   \
+    \     result.append(getStringFromList(mult2AndAdd1Mapper)).append(space);\n  \
+    \      result.append(getStringFromList(mult2AndAdd1Tranformation)).append(space);\n\
+    \        result.append(getStringFromList(squareAndNextEvenMapper)).append(space);\n\
+    \        result.append(getStringFromList(squareAndNextEvenNumberTransformation)).append(space);\n\
+    \n        System.out.println(result.toString().trim());\n    }\n\n    private\
+    \ static String getStringFromList(List<Integer> numbers) {\n        StringBuilder\
+    \ builder = new StringBuilder(\"\");\n        for (int n : numbers) {\n      \
+    \      builder.append(n).append(\" \");\n        }\n        return builder.toString().trim();\n\
+    \    }\n}"
+  learner_created: false
+status: Unchecked
+record: -1

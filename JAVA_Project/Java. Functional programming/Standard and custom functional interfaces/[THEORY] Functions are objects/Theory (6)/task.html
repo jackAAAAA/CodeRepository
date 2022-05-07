@@ -1,0 +1,178 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Functional programming</h2>
+  <h2 style="text-align: center;">and object-oriented design patterns</h2>
+  <div>
+   In object-oriented design various patterns are widely used, such as factory, strategy, template method, command, chain of responsibility, observer and so on.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   In some of these patterns we need to create a base class (abstract or interface) with single abstract method and then implement it in all concrete classes (for example, in strategy, chain of responsibility, observer and some others) or do something similar. In this case we can use lambda expressions instead of creating concrete classes.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <b>Let's see an example:</b> rewriting strategy pattern using lambda expressions.
+  </div>
+  <div>
+   If you are not already familiar with the pattern, read this: 
+   <a href="https://en.wikipedia.org/wiki/Strategy_pattern" rel="nofollow noopener noreferrer">https://en.wikipedia.org/wiki/Strategy_pattern</a>.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   Our domain is generating an account number using different algorithms. We have four classes as show below.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>/**
+&nbsp; * Generates an account number using a generation strategy
+&nbsp; */
+class NumberGenerator {
+
+&nbsp; &nbsp; // This may be any subclass of GenerationStrategy
+&nbsp; &nbsp; private final GenerationStrategy strategy;
+
+&nbsp; &nbsp; public NumberGenerator(GenerationStrategy strategy) {
+&nbsp; &nbsp; &nbsp; &nbsp; this.strategy = strategy;
+&nbsp; &nbsp; }
+
+&nbsp; &nbsp; public String generate() {
+&nbsp; &nbsp; &nbsp; &nbsp; return strategy.generate();
+&nbsp; &nbsp; }
+
+&nbsp; &nbsp; public GenerationStrategy getStrategy() {
+&nbsp; &nbsp; &nbsp; &nbsp; return strategy;
+&nbsp; &nbsp; }
+}
+
+/**
+&nbsp; * Abstract generation strategy
+&nbsp; */
+abstract class GenerationStrategy {
+
+&nbsp; &nbsp; abstract String generate();
+}
+
+/**
+&nbsp; * Concrete generation strategy. It generates number based on UUID
+&nbsp; */
+class UUIDGenerationStrategy extends GenerationStrategy {
+
+&nbsp; &nbsp; @Override
+&nbsp; &nbsp; public String generate() {
+&nbsp; &nbsp; &nbsp; &nbsp; return UUID.randomUUID().toString();
+&nbsp; &nbsp; }
+}
+
+/**
+&nbsp; * Concrete generation strategy. It generates number based on the prefix and a random value
+&nbsp; */
+class FormattedRandomGenerationStrategy extends GenerationStrategy {
+&nbsp; &nbsp; private final Random random = new Random();
+
+&nbsp; &nbsp; @Override
+&nbsp; &nbsp; public String generate() {
+&nbsp; &nbsp; &nbsp; &nbsp; return "111-123-" + Math.abs(random.nextInt());
+&nbsp; &nbsp; }
+}</code></pre> 
+   <br>
+  </div>
+  <div>
+   There are 
+   <b>NumberGenerator</b>,
+   <b></b>
+   <b></b> an abstract 
+   <b>GenerationStrategy</b> and two concrete strategies: 
+   <b>UUIDGenerationStrategy </b>and 
+   <b>FormattedRandomGenerationStrategy </b>that represents concrete algorithms.
+   <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   Now, we can use it as follows.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><pre><code>// an example of using UUIDGeneratingStrategy
+final NumberGenerator uuidGenerator = new NumberGenerator(new UUIDGeneratingStrategy());
+
+System.out.println(uuidGenerator.generate());
+
+// an example of using FormattedRandomGenerationStrategy
+final NumberGenerator randomGenerator = new NumberGenerator(new FormattedRandomGenerationStrategy());
+
+System.out.println(randomGenerator.generate());</code></pre></pre>
+   <div>
+    <br>
+   </div>
+   <div>
+    If we'd like to create new generation strategy (new behavior), we need to write a new concrete strategy class.
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    Instead of this, we can use lambda expressions to create new strategies easy and concise. We don't need to modify 
+    <b>NumberGenerator</b> class, but let's rewrite our abstract 
+    <b>GenerationStrategy</b> as follows and remove our classes for representing concrete strategies.
+    <br>
+   </div>
+   <div>
+    <br>
+   </div>
+   <div></div>
+   <pre><code>/**
+&nbsp; * Functional interface for the abstract generation strategy.
+  * It's a String supplier
+&nbsp; */
+@FunctionalInterface
+interface GenerationStrategy {
+
+&nbsp; &nbsp; String generate();
+
+}</code></pre>
+   <div>
+    <br>
+   </div>
+   <div>
+    Now, we can use the strategy pattern as follows.
+   </div>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><pre><code>// It's instead of UUIDGeneratingStrategy
+final NumberGenerator uuidGenerator = new NumberGenerator(() -&gt; UUID.randomUUID().toString());
+
+System.out.println(uuidGenerator.generate());
+
+final Random random = new Random();
+// Another simple generator for tests purposes
+final NumberGenerator testGenerator = new NumberGenerator(() -&gt; "test-" + String.valueOf(random.nextInt(100)));
+
+System.out.println(testGenerator.generate());</code></pre> </pre>
+  </div>
+  <div>
+   You can find more information about writing design patterns in functional style this:
+  </div>
+  <div>
+   <ul>
+    <li><i><b>Richard Warburton. Java 8 Lambdas</b></i><b> </b><br></li>
+    <li><b><i>Raoul-Gabriel Urma, Mario Fusco, and Alan Mycroft. Java 8 in Action</i></b><b></b><b></b><br></li>
+   </ul>
+  </div>
+ </body>
+</html>

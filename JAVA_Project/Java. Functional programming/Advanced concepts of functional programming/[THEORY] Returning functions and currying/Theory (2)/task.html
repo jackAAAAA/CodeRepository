@@ -1,0 +1,53 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Currying</h2>
+  <p><b>Currying</b> is a technique of translating the evaluation of a function that takes multiple parameters into evaluating a sequence of functions, each with a single parameter.</p>
+  <pre><code>IntBinaryOperator notCurriedFun = (x, y) -&gt; x + y; // not a curried function
+
+IntFunction&lt;IntUnaryOperator&gt; curriedFun = x -&gt; y -&gt; x + y; // a curried function</code></pre>
+  <p>We can define curried function with three arguments and then apply arguments one by one.<br></p>
+  <pre><code>// curried function
+IntFunction&lt;IntFunction&lt;IntFunction&lt;Integer&gt;&gt;&gt; fff = x -&gt; y -&gt; z -&gt; x * y + z;
+
+// fff returns a curried function y -&gt; z -&gt; 2 * y + z
+IntFunction&lt;IntFunction&lt;Integer&gt;&gt; ff = fff.apply(2);
+
+// ff returns a curried function z -&gt; 2 * 3 + z
+IntFunction&lt;Integer&gt; f = ff.apply(3);
+
+// f returns 7
+int result = f.apply(1);</code></pre> 
+  <br>A more short example.
+  <br>
+  <br>
+  <pre><code>// the another result is equal to 153
+int anotherResult = fff.apply(10).apply(15).apply(3);</code></pre> 
+  <code></code>
+  <div>
+   Let's rewrite the considered 
+   <b>sumF</b> method. Instead of this method returning a function we can write a curried function and then use it in the same way.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></div>
+  <pre><code>Function&lt;IntUnaryOperator, IntBinaryOperator&gt; sumF = 
+        (f) -&gt; (a, b) -&gt; f.applyAsInt(a) + f.applyAsInt(b);
+
+
+
+// build a new sumOfSquares operator in terms of sumF
+IntBinaryOperator sumOfSquares = sumF.apply(x -&gt; x * x);
+
+// the sum is equal to 125 again
+long sum = sumOfSquares.applyAsInt(5, 10);</code></pre>
+  <div>
+   <br>
+  </div>
+  <div>
+   As you see, returning functions and currying are very close concepts and both of them are based on 
+   <b>closures</b>.
+  </div>
+ </body>
+</html>

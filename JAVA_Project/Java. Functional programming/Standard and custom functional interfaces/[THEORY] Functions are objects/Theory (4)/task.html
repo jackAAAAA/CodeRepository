@@ -1,0 +1,51 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Callbacks</h2>
+  <div>
+   According to Wikipedia:
+   <br>
+  </div>
+  <i>"In computer programming, a callback is a piece of executable code that is passed as an argument to other code, which is expected to call back (execute) the argument at some convenient time."</i>
+  <div></div>
+  <p>In other words, in Java, we can pass our functions (presented by objects) in a method/function as its arguments.</p>
+  <p>Let's take an example. Since Java 8, any collection has the <b>forEach()</b> method. The method accepts <b>Consumer</b> and calls it for each element in the collection.</p>
+  <pre><code>// our collection with fruits
+List&lt;String&gt; fruits = Arrays.asList("apple", "pear", "orange", "banana");
+
+// it will print all fruits in the collection
+fruits.forEach(System.out::println);</code></pre> 
+  <div>
+   <b></b>Of course, we can pass a more difficult logic as a callback.
+   <div>
+    <br>
+   </div>
+   <div>
+    <pre><code>fruits.forEach(fruit -&gt; {
+    String doubleFruit = fruit.concat(fruit).toUpperCase();
+    if (doubleFruit.length() &gt; 10) {
+        System.out.println(doubleFruit);
+    }
+});</code></pre> 
+    <br>
+   </div>
+   <div>
+    The result is shown below.
+   </div>
+   <div>
+    <pre><code>ORANGEORANGE
+BANANABANANA</code></pre> 
+   </div>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <b>Note</b>. In functional programming, a function (including methods in Java) that accepts or returns another function is called a 
+   <b>higher-order function</b>. A lot of features such as 
+   <b>function composition</b>, 
+   <b>currying</b>, 
+   <b>monads</b> and some others based on this idea.
+  </div>
+ </body>
+</html>

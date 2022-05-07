@@ -1,0 +1,64 @@
+<html>
+ <head></head>
+ <body>
+  <p>In which cases can we replace an anonymous class with a lambda expression? All interfaces from the standard java class library.<br></p>a)
+  <div></div>
+  <div>
+   <pre><code>final double variable = 10;
+Serializable serializable = new Serializable() {
+    double applyFun(double x) {
+        return x + variable;
+    }
+};</code></pre>&nbsp;
+   <br>b)
+   <br>
+  </div>
+  <div>
+   <pre><code>Callable&lt;String&gt; callable = new Callable&lt;String&gt;() {
+    @Override
+&nbsp; &nbsp; public String call() throws Exception {
+        Thread.sleep(100);
+        return "hello";
+&nbsp; &nbsp; }
+};</code></pre>&nbsp;
+   <br>
+  </div>
+  <div>
+   c)
+   <br>
+  </div>
+  <div>
+   <pre><code>Future&lt;Double&gt; future = new Future&lt;Double&gt;() {
+    @Override
+&nbsp; &nbsp; public boolean cancel(boolean mayInterruptIfRunning) {
+        return false;
+&nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; @Override
+&nbsp; &nbsp; public boolean isDone() {
+&nbsp; &nbsp;     return false;
+&nbsp; &nbsp; }
+
+&nbsp; &nbsp; @Override
+&nbsp; &nbsp; public Double get() throws InterruptedException, ExecutionException {
+&nbsp; &nbsp;     return null;
+&nbsp; &nbsp; }
+
+&nbsp; &nbsp; // and other methods...
+};</code></pre>&nbsp;
+   <br>
+  </div>
+  <div>
+   d)
+  </div>
+  <div>
+   <pre><code>// see NIO.2
+PathMatcher matcher = new PathMatcher() {
+    @Override
+&nbsp; &nbsp; public boolean matches(Path path) {
+&nbsp; &nbsp;     return false;
+&nbsp; &nbsp; }
+};</code></pre>
+  </div>
+ </body>
+</html>

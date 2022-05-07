@@ -1,0 +1,10 @@
+content:
+- '[THEORY] Functions are objects'
+- Replacing anonymous classes with lambda expressions
+- Matching the functional interfaces
+- Behaviour parametrization with lambda expressions
+- Your own functional interface
+- Understanding of the function composition
+- Composing predicates
+- Usage of comparators and composition for sorting
+- '[HARD] The chain of responsibility'

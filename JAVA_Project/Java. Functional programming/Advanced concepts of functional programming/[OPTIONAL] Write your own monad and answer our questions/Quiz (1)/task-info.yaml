@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: To fix mistakes in English
+- text: To change the course structure
+- text: 'To add Java 9-11 functional features '
+- text: To increase the number of theory and problems
+- text: To make the descriptions of the problems clearer
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

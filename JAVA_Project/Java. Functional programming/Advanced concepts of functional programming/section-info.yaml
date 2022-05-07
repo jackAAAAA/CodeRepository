@@ -1,0 +1,12 @@
+custom_name: 'Advanced concepts of functional programming '
+content:
+- '[THEORY] Returning functions and currying'
+- Functions returning functions
+- Currying functions
+- '[HARD] Custom integer reducer'
+- '[HARD] Multifunctional mapper'
+- '[THEORY] Monads and related things in Java 8'
+- Understanding monads and related things
+- What monads exist in Java 8
+- Optionals
+- '[OPTIONAL] Write your own monad and answer our questions'

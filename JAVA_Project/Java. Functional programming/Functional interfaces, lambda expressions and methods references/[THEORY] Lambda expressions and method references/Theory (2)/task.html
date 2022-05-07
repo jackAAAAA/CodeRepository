@@ -1,0 +1,29 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Writing lambda expressions</h2> 
+  <p>A lambda expression has two parts: the part before the arrow operator "<strong>-&gt;</strong>" are the <strong>parameters</strong> and the part following the "<strong>-&gt;</strong>" is its <strong>body</strong>.</p> 
+  <p>There are a lot of ways to write lambda expressions in Java 8. Let's consider some examples.</p> 
+  <pre><code class="language-java">// a simple way to write a lambda expression
+BiFunction&lt;Integer, Integer, Integer&gt; sum = (x, y) -&gt; x + y;
+
+// if the only one argument
+Function&lt;Integer, Integer&gt; identity = x -&gt; x; // (x) -&gt; x; is valid too
+
+// without type inference
+Function&lt;Integer, Integer&gt; mult = (Integer x) -&gt; x * 2;
+
+// with multiple statements
+Function&lt;Integer, Integer&gt; adder = (x) -&gt; {
+    x += 5;
+    x += 10;
+    return x;
+};</code></pre> 
+  <p>The code before operator "<strong>=</strong>" is not important now, but you should know <strong>Function&lt;T, R&gt;</strong> is an interface for representing functions.</p> 
+  <p><strong>Additional explanations</strong><em><strong>: </strong></em></p> 
+  <ul> 
+   <li><strong>BiFunction&lt;T, U, R&gt;</strong> is an interface representing function with two arguments of types T and U. It returns value of type R.</li> 
+   <li><strong>Function&lt;T, R&gt;</strong> is also a special interface but it has only one argument of type T and returns value of type R.</li> 
+  </ul>
+ </body>
+</html>

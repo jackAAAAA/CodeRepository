@@ -1,0 +1,12 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public static void printBalanceIfNotEmpty(String userLogin) {
+
+    }
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,41 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Understanding monads</h2> 
+  <p style="text-align: right;"><em>A monad is a monoid in the category of endofunctors, </em></p> 
+  <p style="text-align: right;"><em>what's the problem?</em></p> 
+  <p style="text-align: right;"><em>James Iry</em></p> 
+  <p>The base concept of monads origins from math (especially, Category Theory) and is quite abstract. In this course, we'll focus on monads in Java, how to recognize them in a code and to use it in a practice. In order to understand it we need some intuition and the code reading skill.</p> 
+  <p>In programming, by monads we mean a structure that puts a value in a computational context. They represent computations defined as sequences of steps. It's not a formal definition. It's just a general idea. Also, we can consider them as design patterns in functional programming by analogy with design pattern in object-oriented programming. But still the monad is more abstract "pattern".</p> 
+  <p>Monads allows to make our code more concise, composability and to hide complexity. It protected us from unwanted side effects.</p> 
+  <p>Let's consider a base interface of a Monad. Any monad has two operations: <strong>bind </strong>(also known as <strong>flatMap</strong>) and <strong>unit</strong> (also known as <strong>pure</strong>).</p> 
+  <pre><code>/**
+ * A parametrized type Monad&lt;T&gt;
+ */
+interface Monad&lt;T&gt; {
+
+&nbsp; &nbsp; /**
+&nbsp; &nbsp;  * Takes a value T and returns Monad&lt;T&gt; wrapping the value
+&nbsp; &nbsp;  */
+&nbsp; &nbsp; Monad&lt;T&gt; unit(T value);
+
+&nbsp; &nbsp; /**
+&nbsp; &nbsp;  * Takes a function f: T -&gt; Monad&lt;U&gt; and returns a Monad&lt;U&gt;
+&nbsp; &nbsp;  */
+&nbsp; &nbsp; &lt;U&gt; Monad&lt;U&gt; bind(Function&lt;? super T, Monad&lt;U&gt;&gt; f);
+}</code></pre> 
+  <p>Remember, a monad is a <strong>parameterized type</strong> with <strong>unit (pure)</strong> and <strong>bind (flatMap) </strong>functions. These operations obey some algebraic laws, but they won't be considered in this course (you may google if it's interesting for you).</p> 
+  <p>Working with a monad is an application of functions to a value wrapped inside the monad.</p> 
+  <p>In practice we'll often use an additional method <strong>map</strong> that may be defined as a combination of <strong>bind</strong> and <strong>unit</strong>.</p> 
+  <pre><code>/**
+ * Takes a function f: T -&gt; U and returns a Monad&lt;U&gt;
+ * May be defined as a combination of unit and bind
+ */
+&lt;U&gt; Monad&lt;U&gt; map(Function&lt;? super T, ? extends U&gt; f);</code></pre> 
+  <p><strong>Surprise: </strong>adding the new operation we made our abstract monad not only a monad, but also<strong> an applicative functor</strong>! But we'll not distinguish them in the course, let's consider the <strong>map</strong> method as additional.</p> 
+  <p>Another additional useful operation is a <strong>get</strong> operation that returns a value back to the world.</p> 
+  <pre><code>/** * Returns the value back to the world */ T get();</code></pre> 
+  <p>Perhaps, this step was a little abstract. Further, some concrete types of monads will be considered. Each of them has all considered "monadic-like" methods and adds some special methods.</p> 
+  <p><br> <strong>Note. </strong>Java 8 doesn't have a built-in general monad interface, but it has Stream&lt;T&gt; and Optional&lt;T&gt; classes with the same methods (and a lot of others). Both of them may be considered as monads.</p>
+ </body>
+</html>

@@ -1,0 +1,85 @@
+<html>
+ <head></head>
+ <body>
+  <div>
+   <b>Example 1.</b> Let's assume we have a list of words and we'd like to construct a long word from the short words (length &lt; 4). The long word should be in upper case, each source word must be in the result only once.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>String longWord = words.stream()
+        .filter(w -&gt; w.length() &lt; 4)
+&nbsp; &nbsp; &nbsp; &nbsp; .map(String::toUpperCase)
+&nbsp; &nbsp; &nbsp; &nbsp; .distinct()
+&nbsp; &nbsp; &nbsp; &nbsp; .reduce("", String::concat); // terminal operation</code></pre>&nbsp;
+   <br>
+  </div>
+  <div>
+   1) creating a stream from the list (
+   <b>stream()</b>)
+  </div>
+  <div>
+   2) filtering the stream by lengths of the words (
+   <b>filter()</b>)
+  </div>
+  <div>
+   3) mapping each word to upper case (
+   <b>map()</b>)
+  </div>
+  <div>
+   4) removing&nbsp;the repeating words (
+   <b>distinct()</b>)
+  </div>
+  <div>
+   5) concatenating all words (
+   <b>reduce()</b>), the first argument is identity (neutral element), the second is a function for combining result.&nbsp;
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   A list of words and the corresponding long word:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>The word list: [picture, Day, act, hit, bag, CAT, word, cat, we, act, WELL, switch, eye]
+The result long word: DAYACTHITBAGCATWEEYE</code></pre>
+   <b></b>
+   <br>
+  </div>
+  <div>
+   Think about why we can't to swap 
+   <b>map</b>&nbsp;and 
+   <b>distinct </b>operations in this example.
+   <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <b>Example 2.</b> Let's see another example. We'd like to check the value 10 is presented in the given range [1, 10) or not.
+   <b><br></b>
+   <br>
+   <pre><code>boolean hasValue10 = IntStream.range(1, 10).anyMatch(x -&gt; x == 10);</code></pre>&nbsp;
+  </div>
+  <div>
+   1) creating an integer stream (a special type of stream) with values in&nbsp;range [1, 10), i.e. 10 is excluded
+   <br>2) check the value 10 is presented in the stream&nbsp;
+  </div>
+  <div>
+   Of course, 
+   <b>hasValue10 == false</b>.
+   <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span>As you see, Stream API makes data processing easier and our code more clear.</span>
+   <br>
+  </div>
+ </body>
+</html>

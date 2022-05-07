@@ -1,0 +1,76 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">The <em>java</em>.<em>util</em>.<em>function </em>package<em></em><br></h2>
+  <div>
+   Since java 8 the JCL has a lot of functional interfaces that represent functions. These functional interfaces are in 
+   <b>java.util.function</b>.
+   <br>
+  </div>
+  <div>
+   The package contains more than 40 functional interfaces of five groups: 
+   <i><b></b></i>
+   <b>functions</b>
+   <b>, </b>
+   <b>operators</b>
+   <b>, </b>
+   <b>predicates</b>
+   <b>, </b>
+   <b>suppliers</b>
+   <i><b></b></i> and 
+   <i><b></b></i>
+   <b>consumers</b>
+   <i><b></b></i>. 
+   <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   Let's consider these groups.
+  </div>
+  <div>
+   <ul>
+    <li><b>Functions </b><i><b></b></i>accept arguments and produce results.</li>
+    <li><i><b></b></i><b>Operators</b><i><b></b></i> produce results of the same type as their arguments (special case of function).</li>
+    <li><i><b></b></i><b>Predicates</b><i><b> </b></i>return boolean values and accept any arguments (boolean-valued function).</li>
+    <li><i><b></b></i><b>Suppliers</b><i><b></b></i> return values and accept nothing.</li>
+    <li><i><b></b><b></b></i><b>Consumers</b><i><b> </b></i>accept arguments and return no result.</li>
+   </ul>
+   <div>
+    Main differences between functional interfaces in the same group are number of arguments and generic or not.
+    <br>
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    Some examples:
+   </div>
+   <div>
+    <ul>
+     <li><i><b></b></i><b>Function&lt;T, R&gt;</b><i><b></b></i> accepts a value of type T and produces a result of type R.<i><br></i></li>
+     <li><i><b></b></i><b>BiFunction&lt;T, U, R&gt;</b><i><b></b></i> accepts two values of T and U types and produces a result of type R.<br></li>
+     <li><i><b></b></i><b>LongFunction&lt;R&gt;</b><i><b></b></i> accepts a long value and produces a result of type R.</li>
+     <li><i><b></b></i><b>IntToDoubleFunction</b><i><b></b></i> accepts an integer value and produces a double value.<br></li>
+     <li><i></i><b>IntPredicate</b><i></i> accepts an integer value and returns boolean value.<br></li>
+     <li><i></i><b>Supplier&lt;T&gt;</b><i></i> returns a value of type T.</li>
+     <li><i></i><b>BiConsumer&lt;T, U&gt;</b><i></i> accepts two values of T and U types.<br></li>
+     <li>And others...</li>
+    </ul>
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    For details see 
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html" rel="nofollow noopener noreferrer">https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html</a>
+    <br>
+   </div>
+   <br>
+  </div>
+  <div>
+   Sometimes we will use generic interfaces and sometimes non-generic.
+  </div> 
+ </body>
+</html>

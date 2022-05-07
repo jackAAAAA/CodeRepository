@@ -1,0 +1,31 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Examples<br></h2>
+  <p>Let's consider some functional interfaces.</p>
+  <pre><code>// generator accepts nothing and returns integer value 3
+IntSupplier generator = () -&gt; 3;
+
+final int factor = 2;
+
+// multiplier accepts an integer value and returns another one, it uses closure
+IntUnaryOperator multiplier = val -&gt; factor * val;
+
+// predicate isEven accepts an integer value and returns true if the value is even else false
+IntPredicate isEven = val -&gt; val % 2 == 0;
+
+// printer accepts a value and prints it in the standard out, it returns nothing
+Consumer&lt;String&gt; printer = System.out::println;</code></pre> 
+  <div>
+   As you can see, types of interfaces (left) and type of lambdas (right) has the same semantic meaning. Actually, parameters and returned value of lambda corresponds to parameters and returned value of the SAM in a functional interface.
+   <b><br><br>IntSupplier</b> has a method 
+   <b>int getAsInt()</b> that corresponds to lambda 
+   <b>() -&gt; 3 </b>in the example above.
+   <b> <br></b>Also,
+   <b> IntPredicate</b> has a method 
+   <b>boolean test(int value)</b> that corresponds to lambda 
+   <b>val -&gt; val % 2 == 0</b>.
+   <br>
+  </div>
+ </body>
+</html>

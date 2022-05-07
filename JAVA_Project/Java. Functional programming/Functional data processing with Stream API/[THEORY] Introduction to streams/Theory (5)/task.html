@@ -1,0 +1,46 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Stream classes</h2>
+  <p><b>Stream&lt;T&gt;&nbsp;</b>represents a sequence of elements of type <b>T</b>, but there are several other classes for streams: <b>IntStream</b>, <b>LongStream</b>&nbsp;and <b>DoubleStream</b>. They are primitive specialization of <b>Stream&lt;T&gt;</b>. <br></p>
+  <p>These streams have some features:</p>
+  <ul>
+   <li>Their methods accept primitive-specialized functions. For example, <b>IntStream.filter()</b>&nbsp;accept <b>IntPredicate</b>, but not <b>Predicate&lt;Integer&gt;.</b></li>
+   <li>They have additional methods. For example, all of these stream have methods <b>average()</b>&nbsp;and <b>summaryStatistics()</b>. <b>IntStream</b>&nbsp;and <b>LongStream</b>&nbsp;have two considered methods <b>range() </b>and <b>rangeClosed()</b>.<br></li>
+   <li>Using of primitive specialized functions and streams have the performance benefits because it allows to avoid boxing and unboxing operations and not only.</li>
+  </ul>
+  <p>Finally, we'd like to calculate number of elements, max, min and average value in a stream. Let's use <b>IntStream</b> to do it!<br></p>
+  <pre><code>IntSummaryStatistics stat = IntStream.rangeClosed(1, 55_555).summaryStatistics();
+
+System.out.println("Count: " + stat.getCount());
+System.out.println("Max: " + stat.getMax());
+System.out.println("Min: " + stat.getMin());
+System.out.println("Avg: " + stat.getAverage());</code></pre>&nbsp;
+  <div>
+   <div>
+    The result is shown below. You can't do the same with 
+    <b>Stream&lt;Integer&gt;</b>.
+   </div>
+   <div>
+    <br>
+    <pre><code>Count: 55555
+Max: 55555
+Min: 1
+Avg: 27778.0</code></pre>
+   </div>
+   <br>
+  </div>
+  <div>
+   It should be noted:
+   <br>
+  </div>
+  <div>
+   <ul>
+    <li>to transform a stream of primitives into generalized stream there is&nbsp;<b>boxed&nbsp;</b>method<b> (IntStream =&gt; Stream&lt;Integer&gt;</b>)<b></b><br></li>
+    <li>to transform a generalized stream into a stream of primitives there are special types of map function: <b>mapToInt</b>, <b>mapToLong</b>, <b>mapToDouble</b>.</li>
+   </ul>Pay attention
+   <b> there is no CharStream in Java.</b>
+   <br>
+  </div>
+ </body>
+</html>

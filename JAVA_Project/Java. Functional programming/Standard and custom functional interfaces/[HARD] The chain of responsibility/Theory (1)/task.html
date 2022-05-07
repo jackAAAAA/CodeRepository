@@ -1,0 +1,18 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">The algorithm for creating an XML request</h2> 
+  <p><strong>﻿</strong>0) Initial request data looks like this shown below (it contains only business data).</p> 
+  <pre><code>&lt;type&gt;payment&lt;/type&gt;&lt;sum&gt;100000&lt;/sum&gt;&lt;order_id&gt;e94dc619-6172-4ffe-aae8-63112c551570&lt;/order&gt;&lt;desc&gt;We'd like to buy an elephant&lt;/desc&gt;</code></pre> 
+  <p>​1) First, a tag <code>&lt;transaction&gt;...&lt;/transaction&gt;</code> is added as border of the data (data is wrapped in the tag). The result:</p> 
+  <pre><code class="language-xml">&lt;transaction&gt;&lt;type&gt;payment&lt;/type&gt;&lt;sum&gt;100000&lt;/sum&gt;&lt;order_id&gt;e94dc619-6172-4ffe-aae8-63112c551570&lt;/order&gt;&lt;desc&gt;We'd like to buy an elephant&lt;/desc&gt;&lt;/transaction&gt;</code></pre> 
+  <p>​2) Then, a digest (MD5) is calculated for entire data created on the previous stage and added as the new digest <code>&lt;digest&gt;...&lt;/digest&gt;</code>. Here is the result:</p> 
+  <pre><code class="language-xml">&lt;transaction&gt;&lt;type&gt;payment&lt;/type&gt;&lt;sum&gt;100000&lt;/sum&gt;&lt;order_id&gt;e94dc619-6172-4ffe-aae8-63112c551570&lt;/order&gt;&lt;desc&gt;We'd like to buy an elephant&lt;/desc&gt;&lt;/transaction&gt;&lt;digest&gt;CZVMYTgc3iiOdJjFP+6dhQ==&lt;/digest&gt;</code></pre> 
+  <p>3) After that, the data is wrapped in a tag <code>&lt;request&gt;...&lt;/request&gt;</code> as shown below. The request is completed.</p> 
+  <pre><code class="language-xml">&lt;request&gt;&lt;transaction&gt;&lt;type&gt;payment&lt;/type&gt;&lt;sum&gt;100000&lt;/sum&gt;&lt;order_id&gt;e94dc619-6172-4ffe-aae8-
+63112c551570&lt;/order&gt;&lt;desc&gt;We'd like to buy an elephant&lt;/desc&gt;&lt;/transaction&gt;
+&lt;digest&gt;CZVMYTgc3iiOdJjFP+6dhQ==&lt;/digest&gt;&lt;/request&gt;</code></pre> 
+  <p>​So, if you have a request data as shown in stage 0, the algorithm should generate the result as shown in stage 3.</p> 
+  <p><strong>Note,</strong> each stage is already implemented for you in a specific <code>RequestHandler</code>.</p>
+ </body>
+</html>

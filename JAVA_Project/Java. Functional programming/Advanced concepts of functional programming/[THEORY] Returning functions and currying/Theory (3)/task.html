@@ -1,0 +1,42 @@
+<html>
+ <head></head>
+ <body>
+  Let's consider another example.
+  <br>
+  <br>We would like to say 
+  <i>"Hi"</i> to our friends and 
+  <i>"Hello"</i> to our partners. We can create a function that has two arguments: 
+  <b>what </b>and 
+  <b>whom</b>. The function will apply 
+  <b>what</b> in dependency on the context.
+  <br>
+  <br>
+  <pre><code>Function&lt;String, Consumer&lt;String&gt;&gt; say = what -&gt; whom -&gt; System.out.println(what + ", " + whom);</code></pre>
+  <br>The friends context:
+  <br>
+  <br>
+  <pre><code>List&lt;String&gt; friends = Arrays.asList("John", "Neal", "Natasha");
+Consumer&lt;String&gt; sayHi = say.apply("Hi");
+
+// too many lines of a code...
+
+friends.forEach(sayHi);</code></pre> 
+  <br>The partners context:
+  <br>
+  <br>
+  <pre><code>List&lt;String&gt; partners = Arrays.asList("Randolph Singleton", "Jessie James");
+Consumer&lt;String&gt; sayHello = say.apply("Hello");
+
+// somewhere in another method
+partners.forEach(sayHello);</code></pre>
+  <br>The result:
+  <br>
+  <br>
+  <pre><code>Hi, John
+Hi, Neal
+Hi, Natasha
+Hello, Randolph Singleton
+Hello, Jessie James</code></pre> 
+  <br>Of course, we could get the person list from a database and a passing the consumer as a method parameter from another part of our program or do something more complex.
+ </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+ <head></head>
+ <body>
+  <p>You have a class <b>Account (number: String, balance: Long, isLocked: boolean)</b>, the list <b>accounts </b>of type <b>List&lt;Account&gt;</b> and the method <b>filter(List&lt;T&gt; elems, Predicate&lt;T&gt; predicate)</b> for filtering the given list of type T by the predicate.</p>
+  <p>The class <b>Account</b> has the next methods: getNumber(), getBalance(), isLocked() for getting the values of the corresponding fields. </p>
+  <p>Write a code for filtering the <b>accounts </b>list<b> </b>in two ways:<br></p>
+  <ol>
+   <li>get list with <b>all non-empty</b> accounts (balance &gt; 0) and save it to the variable <b>nonEmptyAccounts</b></li>
+   <li>get<b> all non-locked</b> accounts<b> with too much money</b> (balance &gt;= 100 000 000) and save it to the variable <b>accountsWithTooMuchMoney</b></li>
+  </ol>
+  <p><b><b></b></b>The class <b>Account</b>, the list <b>accounts (List&lt;Account&gt;) </b>and the method<b> filter(...) </b>will be available during testing.<b> </b><b></b></p>
+  <p><b><b>Important. </b></b>Use the given code template for your solution. Do not change it!<b><br></b></p>
+  <p><b>Example </b>of use the filter method<b>.</b> The code below gets only even number from the list.</p>
+  <pre><code>List&lt;Integer&gt; numbers = ...List&lt;Integer&gt; evenNumbers = filter(numbers, number -&gt; number % 2 == 0);</code></pre>
+  <div>
+   <br>
+  </div>
+  <div>
+   <b>PS: </b>it's often called 
+   <b>behaviour parametrization</b> because behaviour of the method 
+   <b>filter </b>is dependent of the given predicate.
+  </div>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>

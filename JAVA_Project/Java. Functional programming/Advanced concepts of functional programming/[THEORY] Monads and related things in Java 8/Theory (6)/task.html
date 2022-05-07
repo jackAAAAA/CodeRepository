@@ -1,0 +1,26 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;"><i></i>Another monad: Completable Future<br></h2>
+  <p>There is another monad exists in Java 8. Its name is <b>CompletableFuture&lt;T&gt;</b>. The monad is also known as <b>Promise</b> monad<b>.</b></p>
+  <p><b></b>Along with the <em></em><b>Future&lt;V&gt;</b><em></em> interface, it also implemented the <em></em><b>CompletionStage</b><em></em><b>&lt;T&gt;</b> interface for defining the contract for an asynchronous computation step that can be combined with other steps. <b>CompletableFuture&lt;T&gt;</b> provides functional, monadic&nbsp; methods and promoting asynchronous, event-driven programming model as opposed to blocking in older Java. <br></p>
+  <p>This class has a lot of methods (50+ methods for composing, combining, executing async computation steps and handling error). The following are the "monadic" methods of it.</p>
+  <ul>
+   <li><b>thenComposeAsync(Function&lt;? super T,? extends CompletionStage&lt;U&gt;&gt; fn)</b> returns a new <b>CompletionStage</b> that, when this stage completes normally, is executed using this stage's default asynchronous execution facility, with this stage as the argument to the supplied function. It's a <b>bind</b> function for <b>CompletableFuture&lt;T&gt;</b>.<br></li>
+  </ul>
+  <ul>
+   <li><b>thenApplyAsync(Function&lt;? super T,? extends U&gt; fn)</b> returns a new <b>CompletionStage</b> that, when this stage completes normally, is executed using this stage's default asynchronous execution facility, with this stage's result as the argument to the supplied function.&nbsp; It's a <b>map</b> (additional for monads) function for <b>CompletableFuture&lt;T&gt;</b>.</li>
+  </ul>
+  <ul>
+   <li><b></b>Also it has a lot of different methods like <b>unit.</b><br></li>
+  </ul>
+  <p>So, <b>CompletableFuture&lt;T&gt;</b> is also a monad.<br></p>
+  <p>In details with examples, see:</p>
+  <ul>
+   <li><a href="http://www.nurkiewicz.com/2013/05/java-8-definitive-guide-to.html" rel="nofollow noopener noreferrer">http://www.nurkiewicz.com/2013/05/java-8-definitive-guide-to.html</a></li>
+   <li><a href="http://www.nurkiewicz.com/2013/05/java-8-completablefuture-in-action.html" rel="nofollow noopener noreferrer">http://www.nurkiewicz.com/2013/05/java-8-completablefuture-in-action.html</a></li>
+   <li><a href="http://www.deadcoderising.com/java8-writing-asynchronous-code-with-completablefuture/" rel="nofollow noopener noreferrer">http://www.deadcoderising.com/java8-writing-asynchronous-code-with-completablefuture/</a></li>
+  </ul>By this, we finished the consideration of the monads which are built in Java 8.
+  <br>
+ </body>
+</html>

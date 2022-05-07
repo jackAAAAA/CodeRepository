@@ -1,0 +1,16 @@
+<html>
+ <head></head>
+ <body>
+  What does this code print?
+  <br>
+  <br>
+  <pre><code>boolean result = IntStream
+        .iterate(0, n -&gt; n + 1)
+        .limit(100)
+        .filter(n -&gt; n % 2 != 0)
+        .noneMatch(n -&gt; n % 2 == 0);
+
+System.out.println(result);</code></pre>&nbsp;
+  <br>
+ </body>
+</html>

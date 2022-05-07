@@ -1,0 +1,36 @@
+<html>
+ <head></head>
+ <body>
+  <p>In which cases can we replace an anonymous class with a lambda expression? All interfaces from the standard java class library.<br></p>a)
+  <pre><pre><code>Thread thread = new Thread(new Runnable() {
+    @Override
+    public void run() {
+        System.out.println("Hello!");
+    }
+});</code></pre>&nbsp;</pre>b)
+  <pre><pre><code>Comparator&lt;String&gt; comparator = new Comparator&lt;String&gt;() {
+    @Override
+    public int compare(String s1, String s2) {
+        return s1.compareTo(s2);
+    }
+};</code></pre>
+c)<pre><pre><code>Iterator&lt;Integer&gt; iterator = new Iterator&lt;Integer&gt;() {
+    @Override
+    public boolean hasNext() {
+        return false;
+    }
+
+    @Override
+    public Integer next() {
+        return 0;
+    }
+};</code></pre></pre></pre>d)
+  <pre><pre><code>// see SwingJButton button = new JButton("Click me");
+button.addActionListener(new ActionListener() {
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println("Button clicked");
+    }
+});</code></pre></pre> 
+ </body>
+</html>

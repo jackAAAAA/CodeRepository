@@ -1,0 +1,70 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Common stream operations</h2>
+  <p>All stream operations are divided into two groups:</p>
+  <ul>
+   <li><b>Intermediate operations</b> that are always lazy and returns a new stream, such as <b>filter</b>, <b>map</b>, <b>limit,</b> <b>sorted</b>, ...</li>
+   <li><b>Terminal operations</b> that returns a result or produce a side-effect, such as <b>min,</b> <b>max</b>, <b>count</b>, <b>reduce</b>, <b>collect</b>, ...<br></li>
+  </ul>
+  <div>
+   Let's consider some common used operations.
+   <br>
+   <br>
+  </div>
+  <div>
+   <b>Intermediate operations</b>
+  </div>
+  <div>
+   <ul>
+    <li><b>filter</b> returns a stream including the elements that match a predicate</li>
+    <li><b>map</b> returns a stream consisting of the elements that was obtained by applying a function (transforms each element)<br></li>
+    <li><b>limit</b> return a stream consisting of first N elements of this stream</li>
+    <li><b>distinct</b> returns a stream that have only unique elements according to method <b>equals</b></li>
+    <li><b>sorted </b>returns a stream consisting of the elements, sorted according to natural order / the given comparator</li>
+    <li><b>flatMap </b>allows to replace a value with a stream and concatenates all streams together</li>
+   </ul>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <b>Terminal operations</b>
+  </div>
+  <div>
+   <ul>
+    <li><b></b><b>collect(toList)</b> returns a list from the values in a stream, in general cases<b> collect</b> is a more complex operation<b></b></li>
+    <li><b>toArray</b> returns an array from the values in a stream<br></li>
+    <li><b>max / min</b> returns maximum / minimum element of the stream according to the given comparator</li>
+    <li><b>count</b> returns the count of elements in the stream</li>
+    <li><b>forEach</b> performs an operation for each elements of the stream (<i>be careful with side-effects!</i>)<br></li>
+    <li><b>reduce</b> combines values from the stream into a single value (aggregate value)</li>
+    <li><b>anyMatch</b> returns true if at least one element matches a predicate (see also: <b>allMatch</b>, <b>noneMatch</b>)<br></li>
+   </ul>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   Such operations as 
+   <b>filter,</b> 
+   <b>map</b>, 
+   <b>flatMap</b>, 
+   <b>reduce</b>, 
+   <b>forEach</b> and some others are called 
+   <b>higher-order functions</b> because they accept another functions as arguments.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   For more details, see: 
+   <br>
+   <ul>
+    <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html" rel="nofollow noopener noreferrer" title="Link: https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html">https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html</a><br></li>
+    <li><a href="https://www.tutorialspoint.com/java8/java8_streams.htm" rel="nofollow noopener noreferrer">https://www.tutorialspoint.com/java8/java8_streams.htm</a></li>
+    <li>the book with pictures <i><b>Richard Warburton. Java 8 Lambdas</b></i><b> </b><br></li>
+   </ul>
+  </div>
+ </body>
+</html>

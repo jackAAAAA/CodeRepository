@@ -1,0 +1,43 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;"><b>Functional interface</b></h2>
+  <p><b>Functional interface</b> is an interface with a single abstract method<i> </i>(SAM type). Static and default methods are allowed here. Any functional interface can be implemented using lambda expressions, methods references or anonymous classes.<br></p>
+  <p>Examples:<b> </b><b>Runnable</b>, <b>Callable&lt;V&gt;</b>, <b>Comparator&lt;T&gt;</b>, <b>ActionListener</b> and others.</p>
+  <p><b>IMPORTANT:</b> you can't extend class (even abstract), enum or annotation by a lambda expression or a method reference.</p>
+  <p>There is a special annotation <b>@FunctionalInterface</b> exists in <b>The Java Class Library</b>. It marks functional interfaces and indicates if the interface doesn't satisfy the requirements of a functional interface. The annotation is not mandatory for creating lambda expressions but it's recommended to mark functional interfaces.</p>
+  <p>Let's declare our own generic functional interface for representing a simple function with one argument. See code below.</p>
+  <pre><code>@FunctionalInterface
+public interface Fun&lt;T, R&gt; {
+    R apply(T t);
+
+    static void doNothingStatic() { }
+    default void doNothingByDefault() { }
+}</code></pre>
+  <div>
+   <br>
+  </div>Now we can create an instance of 
+  <b>Fun&lt;Double, Double&gt;</b>
+  <b> </b>using lambda expression.
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>Fun&lt;Double, Double&gt; fun = (x) -&gt; x * 2 + 1;</code></pre>
+   <br>It means the 
+   <b>fun </b>accepts Double value&nbsp; 
+   <b>x</b> and returns other double value 
+   <b>(x * 2 + 1)</b>.
+   <br>
+   <br>
+   <div></div>To get result we call the 
+   <b>apply</b> method of the functional interface. It's just like an object.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>double result = fun.apply(3d);</code></pre>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Writing method references</h2>
+  <p>Another way to use code as data is writing method references.</p>
+  <p>Let's see some examples:</p>
+  <ul>
+   <li>reference to a static method<pre><code>Function&lt;Double,Double&gt; sqrt = Math::sqrt;</code></pre></li>
+  </ul>
+  <ul>
+   <li>reference to a non-static method <pre><code>BiFunction&lt;Double,Double,Double&gt; multip = calculator::mult;</code></pre> where calculator is an instance of custom <i>Calculator</i> class and <i>mult</i> is a method that multiplies two doubles and returns the double result.<br></li>
+  </ul>
+  <ul>
+   <li>reference to a constructor of String class <pre><code>Supplier&lt;String&gt; generator = String::new;</code></pre> <pre><code>Supplier&lt;String&gt; generator = () -&gt; new String();</code></pre><br></li>
+  </ul>Further, we will use lambda expressions and method references together.
+ </body>
+</html>

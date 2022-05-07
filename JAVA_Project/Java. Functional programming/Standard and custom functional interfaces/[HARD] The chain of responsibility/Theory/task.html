@@ -1,0 +1,13 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Overview</h2> 
+  <p><a href="https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern" rel="noopener noreferrer nofollow"><strong>The chain of responsibility</strong></a> is an <strong>object-oriented design pattern</strong> that processes a request through a series of handlers (a chain). The request is passed from one handler to another and processed by one or all of these handlers in the chain.</p> 
+  <p>As a rule, an implementation of this pattern requires the following classes and methods:</p> 
+  <ul> 
+   <li><strong>a general handler</strong> is an abstract class or interface with a method <strong>handle/process/etc</strong> and a method to set the next handler;</li> 
+   <li>one or more <strong>concrete handlers </strong>that implement the general handler.</li> 
+  </ul> 
+  <p>The functional style allows us to implement this pattern easier. Instead of writing all concrete handlers we can write lambda expressions (or method references). For setting the next handler it's possible to use function composition in similar to functions way.</p>
+ </body>
+</html>

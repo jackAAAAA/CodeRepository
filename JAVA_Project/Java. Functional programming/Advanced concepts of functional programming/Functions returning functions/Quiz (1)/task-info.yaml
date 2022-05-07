@@ -1,0 +1,29 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: (arg1, arg2) -&gt; (arg3, arg4) -&gt; (String arg5) -&gt; arg1
+- text: (arg1) -&gt; (arg2, arg3) -&gt; (arg4, arg5) -&gt; arg1 + arg2 + arg3 + arg4
+    + arg5
+- text: (arg1, arg2) -&gt; (arg3, arg4) -&gt; (arg5) -&gt; arg1
+- text: (arg1, arg2) -&gt; (arg3, arg4) -&gt; (arg5) -&gt; arg1 + arg2 + arg3 + arg4
+    + arg5
+- text: (arg1) -&gt; (arg2, arg3) -&gt; (arg4, arg5) -&gt; arg5
+- text: (Integer arg1, Integer arg2) -&gt; (arg3, arg4) -&gt; (arg5) -&gt; arg1 +
+    arg2 + arg3 + arg4 + arg5
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

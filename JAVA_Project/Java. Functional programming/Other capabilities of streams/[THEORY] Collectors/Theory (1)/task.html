@@ -1,0 +1,33 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Producing collections</h2>
+  <p>Any stream has a method <b>collect()</b>&nbsp;that allows to produce collections (Lists, Sets, Maps and others).</p>
+  <p>Let's assume, we have a list of accounts. Each account has a <b>balance </b>(Long), an unique <b>number </b>(String) and some other fields.</p>
+  <p>In this case we can:</p>
+  <ul>
+   <li>accumulate numbers into a List&lt;String&gt;</li>
+  </ul>
+  <pre><code>List&lt;String&gt; numberList = accounts.stream()
+        .map(Account::getNumber)
+        .collect(Collectors.toList());</code></pre>
+  <ul>
+   <li>or into a Set&lt;String&gt;</li>
+  </ul>
+  <pre><code>Set&lt;String&gt; numberSet = accounts.stream()
+        .map(Account::getNumber)
+        .collect(Collectors.toSet());</code></pre>
+  <div>
+   <br>
+  </div>
+  <ul>
+   <li>or even collect numbers and balances into a Map&lt;String, Long&gt;:</li>
+  </ul>
+  <pre><code>Map&lt;String, Long&gt; numberToBalanceMap = accounts.stream()
+        .collect(Collectors.toMap(Account::getNumber, Account::getBalance));</code></pre>&nbsp;
+  <br>
+  <p>When you try to collect elements into a List&lt;T&gt; or a Set&lt;T&gt;, the concrete implementation of the collection is chosen by the stream framework.&nbsp;It's possible to choose a concrete collection manually:</p>
+  <pre><code>stream().collect(Collectors.toCollection(HashSet::new));</code></pre>
+  <p>Sometimes we need to collect elements into a thread-safe collection like a ConcurrentMap. We can do it.</p>
+ </body>
+</html>

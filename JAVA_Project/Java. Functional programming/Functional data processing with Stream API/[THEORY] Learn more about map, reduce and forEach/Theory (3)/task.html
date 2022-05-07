@@ -1,0 +1,38 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;"><b>Learn more about reduce<br></b></h2>
+  <p>The <b>reduce</b> operation combines elements into a single value. But how does it work?</p>
+  <p>Let's assume we have a list of numbers 1, 2, ..., 7. Let's summarize the numbers using reduce:</p>
+  <pre><code>int sum = numbers.stream().reduce(0, (acc, elem) -&gt; acc + elem);</code></pre>
+  <p>The first argument of reduce is a <b></b>neutral element<b></b>&nbsp;0<b></b>&nbsp;(0 + elem = elem), the second argument is a sum function. The sum function accepts two parameters: <b>acc</b>&nbsp;is an accumulated value and <b>elem</b>&nbsp;is a next element in the stream.</p>
+  <p>These are our calculations: (((((((0 + 1) + 2) + 3) + 4) + 5) + 6) + 7). </p>
+  <p>We can see it if just add<b> println</b> into the lambda:</p>
+  <pre><code>(acc, elem) -&gt; { 
+    System.out.println("acc = " + acc + ", " + "elem = " + elem);
+    return acc + elem;
+}</code></pre>&nbsp;
+  <div>
+   Output:
+  </div>
+  <div>
+   <pre><code>acc = 0, elem = 1
+acc = 1, elem = 2
+acc = 3, elem = 3
+acc = 6, elem = 4
+acc = 10, elem = 5
+acc = 15, elem = 6
+acc = 21, elem = 7</code></pre>
+   <div>
+    <br>
+   </div>
+   <div>
+    After computing 21 + 7 = 28.
+    <br>
+   </div>
+  </div>
+  <div>
+   <b>Accumulating is one of main principles of a reduction.</b>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,11 @@
+custom_name: 'Other capabilities of streams  '
+content:
+- '[THEORY] Collectors'
+- Choose the existing collectors
+- Collectors in practice  the product of squares
+- Collectors in practice  partitioning words into groups
+- Almost like a SQL  the total sum of transactions by each account
+- Almost like a SQL  click count
+- '[THEORY] Parallel streams'
+- Myths and facts about parallel streams
+- Parallel filtering of prime numbers

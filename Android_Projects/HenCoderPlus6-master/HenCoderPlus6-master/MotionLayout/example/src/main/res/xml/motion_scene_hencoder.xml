@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+            app:constraintSetStart="@id/start"
+            app:constraintSetEnd="@id/end"
+            app:duration="1000">
+
+        <OnClick
+                app:clickAction="toggle"
+                app:targetId="@id/toggle"/>
+
+        <!-- H E N的动画轨迹位置，整个运动的0 - 50% -->
+        <!--TO DO deltaRelative/pathRelative坐标系的正确认知有待建立！！！ -->
+        <!--TO DO 查询 pathMotionArc="startVertical"中填写的参数是啥意思？？？ -->
+        <KeyFrameSet>
+            <KeyPosition
+                    app:framePosition="50"
+                    app:motionTarget="@id/h"
+                    app:percentX="1"
+                    app:percentY="0"
+                    app:keyPositionType="deltaRelative"/>
+
+            <KeyPosition
+                    app:framePosition="50"
+                    app:motionTarget="@id/e"
+                    app:percentX="0.5"
+                    app:percentY="-0.5"
+                    app:keyPositionType="pathRelative"/>
+
+            <KeyPosition
+                    app:framePosition="50"
+                    app:motionTarget="@id/n"
+                    app:percentX="0.5"
+                    app:percentY="0.3"
+                    app:keyPositionType="parentRelative"/>
+
+        </KeyFrameSet>
+    </Transition>
+
+    <!--    start  -->
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/h">
+            <Layout
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                    app:attributeName="textColor"
+                    app:customColorValue="@color/textColor"/>
+        </Constraint>
+
+        <Constraint android:id="@+id/e">
+            <Layout
+                    app:layout_constraintStart_toStartOf="@id/h"
+                    app:layout_constraintTop_toBottomOf="@id/h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <CustomAttribute
+                    app:attributeName="textColor"
+                    app:customColorValue="@color/textColor"/>
+        </Constraint>
+
+        <Constraint android:id="@+id/n">
+            <Layout
+                    app:layout_constraintStart_toStartOf="@id/e"
+                    app:layout_constraintTop_toBottomOf="@id/e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <CustomAttribute
+                    app:attributeName="textColor"
+                    app:customColorValue="@color/textColor"/>
+        </Constraint>
+
+    </ConstraintSet>
+
+
+    <!--    end  -->
+    <!-- 结束位置 h 处于垂直方向的父控件中心位置 & 距离右边控件的距离为8个dp -->
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@+id/h">
+            <Layout
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/e"
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                    app:attributeName="textColor"
+                    app:customColorValue="@color/colorPrimary"/>
+        </Constraint>
+
+        <!-- 结束位置 e 处于父控件的中心位置 -->
+        <Constraint android:id="@+id/e">
+            <Layout
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                    app:attributeName="textColor"
+                    app:customColorValue="@color/colorAccent"/>
+        </Constraint>
+
+        <!-- 结束位置 n 处于垂直方向的父控件中心位置 & 距离左边控件的距离为8个dp -->
+        <Constraint android:id="@+id/n">
+            <Layout
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/e"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <CustomAttribute
+                    app:attributeName="textColor"
+                    app:customColorValue="@color/colorPrimaryDark"/>
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>

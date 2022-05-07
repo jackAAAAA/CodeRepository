@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    完全自定义View的尺寸-->
+<!--    <com.hencoder.layoutsize.view.CircleView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/colorAccent" />-->
+
+<!--    简单改写已有的View的尺寸-->
+    <com.hencoder.layoutsize.view.SquareImageView
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar_rengwuxian" />
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>

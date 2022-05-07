@@ -1,0 +1,30 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Parallel and sequential streams</h2> 
+  <p>I won't write about the importance of parallel data processing because it's obvious, but I have to note that it's pretty easy to write parallel code with Stream API. No threads, no synchronized blocks, no wait and notify calling.</p> 
+  <p>There are several ways exist to create parallel streams:</p> 
+  <ul> 
+   <li>to call<strong> parallelStream() </strong>method of a collection instead of <strong>stream()</strong>:</li> 
+  </ul> 
+  <pre><code>List&lt;String&gt; languages = Arrays.asList("java", "scala", "kotlin", "clojure", "C#");
+List&lt;String&gt; jvmLanguages = languages.parallelStream()
+        .filter(lang -&gt; !lang.equals("C#"))
+        .collect(Collectors.toList());</code></pre> 
+  <ul> 
+   <li>to transform an existing stream into a parallel stream using method <strong>parallel()</strong>:</li> 
+  </ul> 
+  <pre><code>long[] numbers = LongStream
+        .rangeClosed(0, 100_000)
+&nbsp; &nbsp; &nbsp; &nbsp; .parallel()
+&nbsp; &nbsp; &nbsp; &nbsp; .toArray();</code></pre> 
+  <p>Also there are additional convenient methods for working with parallel streams:</p> 
+  <ul> 
+   <li><strong>isParallel() </strong>allows to check the stream is parallel or no</li> 
+   <li><strong>sequential()</strong> returns an equivalent sequential stream</li> 
+  </ul> 
+  <p><strong>Important. </strong>Any stream is either sequential or parallel, no mixed mode. If a stream pipeline has calls to both parallel and sequential methods, the last call wins.</p> 
+  <p><strong>Note.</strong> Behind the scene parallel streams use <strong>ForkJoinPool</strong> introduced in Java 7.</p> 
+  <p>Ok, it's really easy to make a parallel stream. But only a parallel stream is not always more faster than an equivalent sequential stream.</p>
+ </body>
+</html>

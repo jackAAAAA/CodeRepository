@@ -1,0 +1,50 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Downstream collectors</h2>
+  <p>Some collectors such as <b>groupingBy</b> and <b>partitioningBy </b>can accept other collectors as parameters. These "others" collectors are called <b>downstream </b>collectors. As a collector produces a value, a <b>downstream</b> collector produces a part of the value, which is used by the <b>main collector</b>.</p>
+  <p>For instance, we can group elements by a field and calculate some aggregate value for grouping elements.</p>
+  <p>Let's see an example. &nbsp;Our data set is a collection of accounts again.</p>
+  <pre><code>List&lt;Account&gt; accounts = Stream.of(
+        new Account("530012", 3333L, Account.State.ACTIVE),
+        new Account("771843", 15000L, Account.State.BLOCKED),
+&nbsp; &nbsp; &nbsp; &nbsp; new Account("234465", 12000L, Account.State.ACTIVE),
+&nbsp; &nbsp; &nbsp; &nbsp; new Account("110011", 8800L, Account.State.ACTIVE),
+&nbsp; &nbsp; &nbsp; &nbsp; new Account("462181", 45000L, Account.State.BLOCKED),
+&nbsp; &nbsp; &nbsp; &nbsp; new Account("681891", 0L, Account.State.REMOVED)
+).collect(toList());</code></pre>
+  <p>To calculate the total sums of blocked, active and removed accounts we can use downstream collectors like this:</p>
+  <pre><code>Map&lt;Account.State, Long&gt; sumByStates = accounts.stream()
+        .collect(groupingBy(Account::getState, summingLong(Account::getBalance)));</code></pre>
+  <p>In this example <b>summingLong</b> is a downstream<b></b> collector for calculating the sum for each possible account state, <b>groupingBy</b> is the main collectors for collecting elements into a map.</p>
+  <p>The result map has total values by each state represented in the data set.<br></p>
+  <pre><code>{ REMOVED=0, ACTIVE=24133, BLOCKED=60000 }</code></pre>
+  <div>
+   <br>
+  </div>
+  <div>
+   Of course, we can create a reference to an instance of a combined collector and then pass it into
+   <b> </b>
+   <b>collect</b>
+   <b>()</b> method.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>Collector&lt;Account, ?, Map&lt;Account.State, Long&gt;&gt; summingByStates = 
+        groupingBy(Account::getState, summingLong(Account::getBalance));
+
+Map&lt;Account.State, Long&gt; sumByStates = accounts.stream().collect(summingByStates);</code></pre> 
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   In conclusion, it should be noted that method 
+   <b>collect() </b>of a stream
+   <b></b> and 
+   <b>Collectors</b> have a lot of other features and applications to data processing. Don't be afraid and try to experiment with it.
+  </div>
+ </body>
+</html>

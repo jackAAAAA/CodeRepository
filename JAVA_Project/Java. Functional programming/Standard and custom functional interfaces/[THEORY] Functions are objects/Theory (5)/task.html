@@ -1,0 +1,105 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Function composition</h2>
+  <p>Function composition is a powerful mechanism for combining functions to build more complicated functions.</p>
+  <p style="text-align: left;"><b>COMPOSING FUNCTIONS</b></p>
+  <p>In java 8, the functional interface<b> Function&lt;T, R&gt; </b>has two default methods <b>compose(...)</b> and <b>andThen(...)</b> for composing new functions. The main difference between these methods is the execution order.</p>
+  <p>Generally, <b>f.compose(g).apply(x)</b> is the same as <b>f(g(x)),</b> and <b>f.andThen(g).apply(x)</b> is the same as <b>g(</b><b>f(x)).</b><br></p>
+  <p><b></b>Let's see an example with two functions: <b>adder</b> and <b>multiplier</b>.<b></b></p>
+  <pre><code>Function&lt;Integer, Integer&gt; adder = x -&gt; x + 10;
+Function&lt;Integer, Integer&gt; multiplier = x -&gt; x * 5;
+
+// compose: adder(multiplier(5))
+System.out.println("result: " + adder.compose(multiplier).apply(5));
+
+// andThen: multiplier(adder(5))
+System.out.println("result: " + adder.andThen(multiplier).apply(5));</code></pre>
+  <div></div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <br>In this case method 
+   <b>compose</b> returns a composed function that first applies 
+   <b>multiplier </b>to its input, and then applies 
+   <b>adder</b> to the result. Method 
+   <b>andThen </b>returns a composed function that first applies
+   <b> adder</b> to its input, and then applies 
+   <b>multiplier</b> to the result.
+   <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   The result of this program:
+  </div>
+  <div>
+   <pre><code>result: 35
+result: 75</code></pre> 
+  </div>
+  <div>
+   <div>
+    <div>
+     <div style="text-align: center;">
+      <b><br></b>
+     </div>
+     <div style="text-align: left;">
+      <b>COMPOSING PREDICATES</b>
+      <br>
+     </div>
+     <div>
+      <br>
+     </div>
+     <div>
+      The functional interface 
+      <b>IntPredicate</b> (as well as other predicates) has three methods for composing new predicates: 
+      <b>and(...)</b>, 
+      <b>or(...)</b> and 
+      <b>negate(...)</b>. The meaning is clear from the names.
+     </div>
+     <div>
+      <br>
+     </div>
+     <div>
+      Let's assume we have 
+      <b>List&lt;Integer&gt; numbers</b> filled by integer numbers from 1 to 30 (inclusive).
+      <br>
+     </div>
+    </div>
+   </div>
+   <div>
+    We'd like to print only those numbers which are odd or can be divided by 3 (i.e. x % 3 == 0).
+   </div>
+   <div>
+    <br>The code to do it is shown below. 
+    <br>
+   </div>
+   <div>
+    <pre><code>IntPredicate isEven = x -&gt; x % 2 == 0;
+IntPredicate dividedBy3 = x -&gt; x % 3 == 0;
+IntPredicate pred = isEven.negate().or(dividedBy3);
+
+// print all odd values and even values that can be divided by 3.
+numbers.forEach(val -&gt; {
+    if (pred.test(val)) System.out.print(val + " ");
+});</code></pre>
+    <div>
+     <br>
+    </div>The result of this program:
+   </div>
+   <div>
+    <pre><code>1 3 5 6 7 9 11 12 13 15 17 18 19 21 23 24 25 27 29 30 &nbsp;</code></pre> 
+    <br>
+   </div>
+   <div>
+    <div>
+     By this, we finish our consideration of 
+     <b>functional interfaces </b>and 
+     <b>java.util.function</b>.
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

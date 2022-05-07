@@ -1,0 +1,26 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Performance of parallel streams</h2>
+  <p>There are several factors to evaluate performance of a parallel stream.&nbsp;<br></p>
+  <ul>
+   <li><b>Size of data.&nbsp;</b>The more bigger size of data =&gt; the greater speedup.</li>
+  </ul>
+  <ul>
+   <li><b></b><b>Boxing/Unboxing. </b><b></b>Primitive values are processed faster than boxed values.</li>
+  </ul>
+  <ul>
+   <li><b>The number of cores are available at runtime.&nbsp;</b>The more available cores =&gt; the greater speedup.</li>
+  </ul>
+  <ul>
+   <li><b>Cost per element processing.</b> The longer each element is processed =&gt; the more efficient parallelization. But it is not recommended to use parallel stream for performing too long operations (for example, network interconnection).</li>
+  </ul>
+  <ul>
+   <li><b>Source data structure.</b> Usually initial data source is a collection. The easier it is splited into parts =&gt; the greater speedup. For example,&nbsp;<b>ArrayList</b>, <b>arrays</b> and <b>IntStream.range()</b> constructor <b>are good</b> sources for data splitting because they support random access. Other, such as <b>LinkedList</b>, <b>Stream.iterate</b>&nbsp;<b>are bad</b> sources for data splitting.</li>
+  </ul>
+  <ul>
+   <li><b>Type of operations: stateless or stateful</b>. Stateless operations (examples: <b>filter</b>, <b>map</b>) are better for parallel processing than stateful operations (examples: <b>distinct</b><span>, </span><b>sorted</b><span>, </span><b>limit</b><span>).</span>﻿</li>
+  </ul>
+  <p>Of course, these factors give only an approximate estimate, some&nbsp;reference points.&nbsp;In a real situation a measurement is required. <span>Also consider whether you are ready to spend additional threads to your streams.</span></p>
+ </body>
+</html>

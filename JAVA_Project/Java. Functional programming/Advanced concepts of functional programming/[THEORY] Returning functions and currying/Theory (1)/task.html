@@ -1,0 +1,62 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Returning functions</h2>
+  <p>As a function may be considered as an object we can accept it as a method argument and return it as a value.</p>
+  <p>Let's consider the code below.</p>
+  <pre><code>public static IntBinaryOperator sumF(IntUnaryOperator f) {
+    return (a, b) -&gt; f.applyAsInt(a) + f.applyAsInt(b);
+}</code></pre>
+  <div>
+   <br>
+  </div>The method 
+  <b>sumF</b> accepts an operator 
+  <b>f</b> with an integer argument and returns
+  <b> another operator </b>with two integer arguments. In the method 
+  <b></b>body an two-arguments anonymous function is constructed and returned. This function applies 
+  <b>f</b> to each its argument and summarizes results.
+  <div>
+   <br>
+  </div>
+  <div>
+   What can we do now?
+  </div>
+  <div>
+   Let's write a function 
+   <b>sumOfSquares</b> in terms of 
+   <b>sumF</b> and then apply values.
+  </div>
+  <div>
+   <b></b>
+   <br>
+  </div>
+  <div>
+   <pre><code>// build a new sumOfSquares operator
+IntBinaryOperator sumOfSquares = sumF(x -&gt; x * x);
+
+// the sum is equal to 125
+long sum = sumOfSquares.applyAsInt(5, 10);</code></pre> 
+   <br>
+  </div>
+  <div>
+   Another example:
+  </div>
+  <div>
+   <br>
+  </div>
+  <pre><code>// sum of two identities: 0 + 10 = 10
+long sumOfIdentities = sumF(x -&gt; x).applyAsInt(0, 10);
+
+// sum with coefficients: 10 * 2 + 11 * 2 = 42
+long sumWithCoefficient = sumF(x -&gt; x * 2).applyAsInt(10, 11);
+
+// sum of two cubes: 3 * 3 * 3 + 8 * 8 * 8 = 539
+long sumOfCubes = sumF(x -&gt; x * x * x).applyAsInt(3, 8);</code></pre> 
+  <div>
+   <br>
+  </div>
+  <div>
+   As you can see, the possibility of returning functions opens easy way to build more complex and generalized functions.
+  </div>
+ </body>
+</html>

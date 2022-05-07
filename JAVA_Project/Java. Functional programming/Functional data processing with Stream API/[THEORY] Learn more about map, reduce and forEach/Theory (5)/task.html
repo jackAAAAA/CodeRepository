@@ -1,0 +1,32 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">forEach</h2>
+  <p>Stream API has some operations with side-effects such as<b>&nbsp;forEach</b>.<br></p>
+  <p>For example, we have a list of accounts. Each <b>account</b>&nbsp;has a <b>number</b>, <b>sum</b>&nbsp;and <b>isLocked</b>&nbsp;flag (true, false). We'd like to block all accounts which have too much money (&gt; 10 000 000 abstract units). And it's<b>&nbsp;</b>pretty simple:</p>
+  <div>
+   <pre><code>accountList.stream()
+        .filter(a -&gt; a.getSum() &gt; 10_000_000)
+        .forEach(a -&gt; a.setLocked(true));</code></pre>&nbsp;
+  </div>
+  <div>
+   Before blocking:
+   <br>
+   <pre><code>[
+    Account{number='72300001', sum=888888777555, isLocked=false}, 
+    Account{number='72300002', sum=222222222222, isLocked=false}, 
+    Account{number='72300002', sum=7000000, isLocked=false}
+]</code></pre>
+   <br>After blocking:
+   <br>
+   <pre><code>[
+    Account{number='72300001', sum=888888777555, isLocked=true}, 
+    Account{number='72300002', sum=222222222222, isLocked=true}, 
+    Account{number='72300002', sum=7000000, isLocked=false}
+]</code></pre>
+   <br>
+  </div>Also, 
+  <b>forEach</b> may be used for logging each element from a collection or during testing with assert statements inside a lambda.
+  <div></div>
+ </body>
+</html>

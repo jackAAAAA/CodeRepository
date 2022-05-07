@@ -1,0 +1,31 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Two monads: work with Stream&lt;T&gt; and Optional&lt;T&gt; together</h2>
+  <div>
+   <br>
+  </div>
+  <div>
+   For example, we have two classes: 
+  </div>
+  <div>
+   <ul>
+    <li><b></b>User (firstName: String, lastName: String, account: List&lt;Account&gt;)<br></li>
+    <li>Account (guid: UUID, balance: Long)</li>
+   </ul>
+  </div>
+  <p>Let's write a method that finds an account of a user with the given balance. A user can have more than one account.</p>
+  <pre><code>public static Optional&lt;Account&gt; findAccountOfUserWithBalance(List&lt;User&gt; users, long balance) {
+&nbsp; &nbsp; return users.stream()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .flatMap(u -&gt; u.getAccounts().stream())
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .filter(account -&gt; account.getBalance() == balance)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .findAny();
+}</code></pre>
+  <p>We wrote the good readable code that no contains an external cycle. But we can't return an <b>Account</b>, because <b>findAny</b> method of <b>Stream&lt;T&gt;</b> returns <b>Optional&lt;T&gt;</b>. If stream is not empty (before execution of this method) the method returns an optional containing a value, otherwise it returns the empty optional.</p>
+  <p>In the client code we can print suitable account if it is present, otherwise do nothing.</p>
+  <pre><code>final List&lt;User&gt; users = ...
+final Optional&lt;Account&gt; optAccount = findAccountOfUserWithBalance(users, 3581321);
+optAccount.ifPresent(System.out::println);</code></pre>
+  <p>Some other methods of <b>Stream&lt;T&gt;</b> also returns an <b>Optional&lt;T&gt;</b>: <b>findFirst</b>, <b>min</b>, <b>max</b> and <b>reduce</b> (without initial value). It has the same reasons - the stream may be empty.</p>
+ </body>
+</html>

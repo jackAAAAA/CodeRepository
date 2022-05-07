@@ -1,0 +1,17 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    /**
+     * Checking if a number is prime
+     *
+     * @param number to test >= 2
+     * @return true if number is prime else false
+     */
+    public static boolean isPrime(final long number) {
+        // write your code here
+    }
+  learner_created: false
+status: Unchecked
+record: -1

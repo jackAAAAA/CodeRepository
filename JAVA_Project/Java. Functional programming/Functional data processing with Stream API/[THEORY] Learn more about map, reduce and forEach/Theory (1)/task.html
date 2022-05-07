@@ -1,0 +1,23 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Learn more about map</h2>
+  <p>The <b>map</b> operation transforms some elements into others (N to N transformation, no more, no less).<br></p>
+  <p>Actually, map is often used to get a properties from stream of objects. </p>
+  <p>For example, we have a list of job offers, each job has a title, description, salary and so on. We can create a list that includes all job titles:</p>
+  <pre><code>List&lt;String&gt; titleList = jobList.stream().map(Job::getTitle).collect(Collectors.toList());</code></pre>
+  <p>Another common use is to create DTO (it's not always good) for passing an object between modules or returning response from a service.</p>
+  <p>Let's assume we have an account (id, number, sum, isLocked, created, lastUpdated, owner, ...) and user that is owner (id, firstName, lastName, phone, ...). We'd like to return a list of accounts through a service without unnecessary data. Then we do:</p>
+  <pre><code>List&lt;AccountInfo&gt; infoList = accounts.stream()
+        .map(a -&gt; {
+&nbsp; &nbsp; &nbsp; &nbsp;         AccountInfo info = new AccountInfo();
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; info.setNumber(a.getNumber());
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; info.setActive(!a.isLocked());
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; info.setSum(a.getSum());
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; String wholeName = a.getOwner().getFirstName() + a.getOwner().getLastName();
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; info.setOwnerFullName(wholeName);
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return info;
+        }).collect(Collectors.toList());</code></pre>
+  <p>3) Sometimes map is used with <b>identity function</b> that applies x and returns x. You can use the lambda <b>x -&gt; x</b> or&nbsp;<b>Function.identity()&nbsp;</b>for these purposes.</p>
+ </body>
+</html>

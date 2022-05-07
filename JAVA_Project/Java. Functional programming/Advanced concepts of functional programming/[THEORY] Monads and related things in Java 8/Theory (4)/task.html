@@ -1,0 +1,26 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Stream is a monad</h2>
+  <p><b>Stream </b>allows you to process data in more declarative way without using external cycles because it has an internal optimized cycle.</p>
+  <p>It is considered in detail in the other topics of this course. Now we'll look at this from the point of view of monads. In the literature and some other programming languages it's known as a <b>List monad</b> (with some differences).</p>
+  <p>The following are the "monadic" methods of <b>Stream&lt;T&gt;</b>.</p>
+  <p><b>unit</b></p>
+  <ul>
+   <li><b>Stream.of(T t)</b> returns a stream containing a single element</li>
+   <li><b>Stream.empty()</b> returns an empty stream</li>
+   <li><b>Stream.of(T... values)</b> return a stream with the given values</li>
+  </ul>
+  <p>Also, collections in Java 8 has another unit methods for creating a stream: <b>stream()</b> and <b>parallelStream()</b>.</p>
+  <p><b>bind</b></p>
+  <ul>
+   <li><b>flatMap(Function&lt;? super T, ? extends Stream&lt;? extends R&gt;&gt; mapper)</b> transform each<b> </b>element from a stream into another stream and concatenates all streams into one.</li>
+  </ul>
+  <p>So, <b>Stream&lt;T&gt;</b> is a monad.<br></p>
+  <p><b>map (additional "monadic-like" method)</b></p>
+  <ul>
+   <li><b></b><b>map(Function&lt;? super T, ? extends R&gt; mapper)</b> <b></b><b></b>returns a stream consisting of the results of applying the given function to the elements of this stream.</li>
+  </ul>
+  <p><b>Stream&lt;T&gt;</b> &nbsp;also has a special forms of <b>map</b> and <b>flatMap</b> for mapping the values in a primitive stream. It's useful in practice but doesn't matter for the abstract monadic concept.<br></p>
+ </body>
+</html>

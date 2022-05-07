@@ -1,0 +1,18 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Understanding lambda expressions</h2>
+  <p>By <b>lambda expression</b> we mean an <b>anonymous function</b> that allows to use code as data and pass it as an argument to a method.<br></p>
+  <p>In previous versions of java many developers used <b>anonymous classes</b> for these purposes. But this solution had some problems: a code was unclear and had redundancy.</p>
+  <p>Let's see an example.<br></p>
+  <pre><code>Callable&lt;Integer&gt; callable = new Callable&lt;Integer&gt;() {
+    @Override
+    public Integer call() throws Exception {
+        return 10;
+    }
+};</code></pre>
+  <p>If we use Java 8+ we can rewrite this code more simple and clear with the lambda:</p>
+  <pre><code>Callable&lt;Integer&gt; callable = () -&gt; 10;</code></pre>
+  <p>The <b>Callable&lt;V&gt;</b> interface is often used in multithreading programming with lambdas, but in this example it is not important. The main thing is it may be instanced with a lambda expression because the interface has <b>only one non-static and non-default method</b>.</p>
+ </body>
+</html>

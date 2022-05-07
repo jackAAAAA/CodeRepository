@@ -1,0 +1,183 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Some caveats</h2>
+  <div>
+   Besides the fact that parallel streams does not always increase performance (and sometimes, decrease), there are some differences in the behavior of parallel and sequential streams. Be careful!
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <b>Addition: </b>If you know another features, please, write them to comments!
+  </div>
+  <div>
+   <br>
+  </div>
+  <div style="text-align: left;">
+   <b>REDUCE AND NEUTRAL ELEMENT</b>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   Let's assume, you'd like to calculate sum of numbers and add 100 to the result. If you use sequential stream, you can set 100 as initial value of the reduce operation:
+  </div>
+  <div>
+   <pre><code>int result = numbers.stream().reduce(100, Integer::sum);</code></pre>
+   <br>
+  </div>
+  <div>
+   This code gives the same result as following:
+  </div>
+  <div>
+   <pre><code>int result = numbers.stream().reduce(0, Integer::sum) + 100;</code></pre>
+   <br>
+  </div>
+  <div>
+   But if you will use a parallel stream, the first code will give you a strange result. It's because your dataset will be splitted into some parts and 100 will be added to each part. 
+  </div>
+  <div>
+   <b><br></b>
+  </div>
+  <div>
+   <b>Conclusion: </b>use only neutral element as an initial value in the reduce operation with parallel streams!
+   <b></b>
+  </div>
+  <div>
+   <br>
+   <b></b>
+  </div>
+  <div style="text-align: left;">
+   <b>FOREACH AND ORDER </b>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   Let's assume, we have a sorted list of numbers 1, 2, ..., 10. We'd like to process and print each number from the list using streams.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   Using a sequential list:
+   <br>
+  </div>
+  <div>
+   <pre><code>sortedNumbers.stream()
+        .map(Function.identity()) // some processing
+&nbsp; &nbsp; &nbsp; &nbsp; .forEach(n -&gt; System.out.print(n + " "));</code></pre> 
+   <br>
+  </div>
+  <div>
+   The output:
+  </div>
+  <div>
+   <pre><code>1 2 3 4 5 6 7 8 9 10</code></pre>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   Using a parallel stream:
+   <br>
+  </div>
+  <div>
+   <pre><code>sortedNumbers.parallelStream()
+        .map(Function.identity()) // some processing
+        .forEach(n -&gt; System.out.print(n + " "));</code></pre> 
+  </div>
+  <div>
+   The output:
+  </div>
+  <div>
+   <pre><code>6 7 9 10 8 3 4 1 5 2</code></pre>
+  </div>
+  <div>
+   Oops..!
+  </div>
+  <div>
+   <br>
+  </div>Let's rewrite the code using 
+  <b>forEachOrdered</b>.
+  <br>
+  <div>
+   <b><br></b>
+  </div>
+  <div>
+   <pre><code>sortedNumbers.parallelStream()
+        .map(Function.identity()) // some processing
+        .forEachOrdered(n -&gt; System.out.print(n + " "));</code></pre> 
+   <br>
+  </div>
+  <div>
+   The output:
+  </div>
+  <div>
+   <div>
+    <pre><code>1 2 3 4 5 6 7 8 9 10</code></pre>
+   </div>
+   <div>
+    That's OK.
+    <br>
+    <br>
+   </div>
+   <div>
+    <b>Conclustion:</b> with parallel streams we should use 
+    <b>forEachOrdered</b> operation that keeps the order of the elements.
+    <br>
+    <br>
+    <div style="text-align: left;">
+     <b>CONCAT AND ORDER<br> </b>
+    </div>
+    <div></div>
+    <br>Let's assume, we'd like to get first three even numbers from a parallel stream of a two concatenated streams (filled one and empty one).
+    <br>
+    <pre><code>// create a filled list of integers
+List&lt;Integer&gt; numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+// create an empty list
+List&lt;Integer&gt; emptyList = Arrays.asList();</code></pre> 
+    <br>concatenating, processing and printing:
+    <br>
+    <pre><code>Stream.concat(numbers.stream(), emptyList.stream())
+        .parallel()
+        .filter(x -&gt; x % 2 == 0)
+&nbsp; &nbsp; &nbsp; &nbsp; .limit(3)
+&nbsp; &nbsp; &nbsp; &nbsp; .forEachOrdered((n) -&gt; System.out.print(n + " "));</code></pre> 
+    <br>
+    <div>
+     The output:
+    </div>
+    <div>
+     <div>
+      <pre><code>2 4 6</code></pre>
+     </div>
+     <div>
+      That's OK.
+     </div>
+    </div>
+    <br>If we create an empty list using 
+    <b>Collections.emptyList()</b>, then we have a problem, we may see other elements in output (always various).
+    <br>
+    <br>The output:
+    <br>
+    <pre><code>2 4 10</code></pre>Oops..!
+    <br>
+    <br>It's because 
+    <b>Collections.emptyList()</b> doesn't report about its order and the stream can't use
+    <b> forEachOrdered</b> correctly.
+    <br>
+    <br>This caveat was taken from 
+    <a href="https://www.youtube.com/watch?v=TPHMyVyktsw&amp;index=31&amp;list=PLVe-2wcL84b-Waky1nkWVSNHPg6eOQWU9" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=TPHMyVyktsw&amp;index=31&amp;list=PLVe-2wcL84b-Waky1nkWVSNHPg6eOQWU9</a> [in russian].
+    <br>
+    <br>
+    <b>Conclusion: </b>b
+    <b></b>e careful with the order of elements in parallel streams.
+    <b></b>
+    <br>
+   </div>
+  </div>
+ </body>
+</html>

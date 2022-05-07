@@ -1,0 +1,9 @@
+type: code
+files:
+- name: src/Task.java
+  visible: true
+  text: "// write your answer here \n\npublic class Task {\n  public static void main(String[]\
+    \ args) {\n    // put your code here\n  }\n}\n"
+  learner_created: false
+status: Unchecked
+record: -1

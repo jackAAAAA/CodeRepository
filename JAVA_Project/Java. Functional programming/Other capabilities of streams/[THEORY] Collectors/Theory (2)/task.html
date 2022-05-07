@@ -1,0 +1,67 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;">Partitioning and grouping</h2>
+  <div>
+   <b>Partitioning</b> is an operation that splits your data by a predicate into map of two collections. The key of the map has a type Boolean.
+  </div>
+  <div>
+   For example we will split all accounts into two lists by a predicate: 
+   <b>balance &gt;= 10000</b>:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>Map&lt;Boolean, List&lt;Account&gt;&gt; partByBalance = accounts.stream()
+        .collect(Collectors.partitioningBy(a -&gt; a.getBalance() &gt;= 10000));</code></pre> 
+  </div>
+  <div>
+   The representation of this map:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>{
+    false=[Account{balance=3333, number='530012'}, Account{balance=0, number='681891'}], 
+    true=[Account{balance=15000, number='771843'}]
+}</code></pre> 
+   <br>
+  </div>
+  <div>
+   <div>
+    <b>Grouping</b> is a more general operation than partitioning. Instead of splitting your data into two groups (true and false), you can use any numbers of any groups.
+    <br>
+   </div>
+   <div>
+    Let's assume our accounts also have a 
+    <b>state</b> field (enum) with 3 possible values: 
+    <b>ACTIVE</b>, 
+    <b>BLOCKED</b> and 
+    <b>REMOVED</b>. Let's group them by state:
+   </div>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>Map&lt;Account.State, List&lt;Account&gt;&gt; groupingByState = accounts.stream()
+        .collect(Collectors.groupingBy(Account::getState));</code></pre> 
+   <br>
+  </div>
+  <div>
+   The representation of this map:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code class="language-java">{
+    REMOVED=[Account{balance=0, number='681891', state='REMOVED'}], 
+    ACTIVE=[Account{balance=3333, number='530012', state='ACTIVE'}], 
+    BLOCKED=[Account{balance=15000, number='771843', state='BLOCKED'}]
+}</code></pre>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,11 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public static LongStream createPrimesFilteringStream(long rangeBegin, long rangeEnd) {
+
+    }
+  learner_created: false
+status: Unchecked
+record: -1

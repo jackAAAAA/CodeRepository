@@ -1,0 +1,48 @@
+<html>
+ <head></head>
+ <body>
+  <h2 style="text-align: center;"><b></b>Producing values</h2>
+  <p>Let's consider some <b>Collectors</b> that produce a single value:</p>
+  <ul>
+   <li>summingInt, summingLong, summingDouble;<br></li>
+   <li>averagingInt, averagingLong, averagingDouble;</li>
+   <li>maxBy, minBy</li>
+   <li>counting</li>
+  </ul>
+  <p><i><b></b></i><b>NOTE:</b><i><b></b></i> to make your code more clear and short you can perform <b>static import </b>of necessary collectors<b>.</b></p>
+  <pre><code>import static java.util.stream.Collectors.averagingLong;
+import static java.util.stream.Collectors.summingLong;</code></pre>
+  <p>Now, we can summarize balances on the accounts:</p>
+  <pre><code>long summary = accounts.stream()
+        .collect(summingLong(Account::getBalance));&nbsp;</code></pre>
+  <p>Pay attention, averaging collectors return a double values even your field is long.</p>
+  <pre><code>double average = accounts.stream()
+        .collect(averagingLong(Account::getBalance));</code></pre>&nbsp;
+  <div>
+   Also, there is more general collector 
+   <b>reducing</b> exists.
+  </div>
+  <div>
+   Let's concatenate all account numbers into one big number (just for fun) using 
+   <b>reducing</b> collector:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code>String meganumber = accounts.stream()
+        .collect(reducing("", Account::getNumber, String::concat));</code></pre>&nbsp;
+  </div>
+  <div>
+   Arguments of reducing collector:
+  </div>
+  <div>
+   <ul>
+    <li><b>identity</b> is a first value to combine results (optional)</li>
+    <li><b>mapper function</b> allows to transform all elements before reducing (optional)</li>
+    <li><b>reducer&nbsp;</b>is a operator to combine pair of values into single value (mandatory!!!)</li>
+   </ul>
+   <p>Of course, we didn't consider all combiners in Stream API and we don't try to do this.<br></p>
+  </div>
+ </body>
+</html>
