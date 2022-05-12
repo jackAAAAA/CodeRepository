@@ -1,0 +1,2 @@
+rootProject.name = "UIBestPracticeTest"
+include ':app'

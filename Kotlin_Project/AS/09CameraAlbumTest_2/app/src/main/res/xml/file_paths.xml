@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    此处的单/代表共享整个SD卡的目录-->
+    <external-path name="my_image" path="/" />
+<!--    共享存储output.image的写法：/Android/data/com.example.cameraalbumtest/cache，而不是/storage/emulated/0/Android/data/com.example.cameraalbumtest/cache，即没有/storage/emulated/0-->
+<!--    <external-path name="my_image" path="/Android/data/com.example.cameraalbumtest/cache" />-->
+</paths>
