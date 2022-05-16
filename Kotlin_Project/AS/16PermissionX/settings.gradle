@@ -1,0 +1,3 @@
+rootProject.name = "RunPermissionTest"
+include ':app'
+include ':Library'
